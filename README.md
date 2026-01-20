@@ -22,7 +22,7 @@ You Can Make a Game Shortcut on the "My games & apps" App on the Dashboard AFTER
 - Report Errors to Issues so People Could Know And Possibly Fix Them!
 
 # Credits/Copyrights (Due to Name Dropping ~And Usage)
-=The Following is Microsoft IP Therefore Microsoft MUST be Credited As Their Creator:
--Selawik Font (Open Source, For XLauncher's Usage of it as a "Segoe UI" Replacement)
--Xbox (For General Mention and Use of Audio)
--Xbox Live (XLaunch Gets User's "Gamerpic", "Gamertag" Through Xbox Live Endpoints)
+= The Following is Microsoft IP Therefore Microsoft MUST be Credited As Their Creator:
+- Selawik Font (Open Source, For XLauncher's Usage of it as a "Segoe UI" Replacement)
+- Xbox (For General Mention and Use of Audio)
+- Xbox Live (XLaunch Gets User's "Gamerpic", "Gamertag" Through Xbox Live Endpoints)
