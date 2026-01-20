@@ -4,14 +4,14 @@ The Xbox One Metro-inspired Launcher!
 # Features
 Allows importing Genuine Xbox Live®️ Accounts to the Launcher!
 if You do not have an Xbox Live®️ Account You can Make a Custom Account With A:
--Custom Icon
--Custom Name
--Custom Achievement Score
+- Custom Icon
+- Custom Name
+- Custom Achievement Score
 Allows Creating Games and "Shell" Games
-=As Long as you Have The Following
--Game/App Icon (.png or .jpeg ONLY)
--Game/App Name
--Game Shortcut or Executable's Path (Optional for Shell Games Which have no Function)
+= As Long as you Have The Following
+- Game/App Icon (.png or .jpeg ONLY)
+- Game/App Name
+- Game Shortcut or Executable's Path (Optional for Shell Games Which have no Function)
 You Can Make a Game Shortcut on the "My games & apps" App on the Dashboard AFTER creating an account
 
 # Notice
