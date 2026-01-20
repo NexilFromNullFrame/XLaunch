@@ -22,6 +22,7 @@ The Xbox One Metro-inspired Launcher!
 
 # Contribute
 - Report bugs and requests via GitHub Issues so contributors can find and fix them.
+- If you Want to Contribute See CONTRIBUTORS.md
 
 # Credits & Trademarks
 - XLaunch is an independent community project and is not affiliated with, endorsed by, or sponsored by Microsoft Corporation.
