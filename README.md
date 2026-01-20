@@ -28,6 +28,8 @@ The Xbox One Metro-inspired Launcher!
   - Xbox/Xbox Live developer and API docs: https://learn.microsoft.com/en-us/gaming/xbox-live/
   - Microsoft Services Agreement: https://www.microsoft.com/en-us/servicesagreement
 - The Selawik font is used as a substitute for Segoe UI. Selawik is an open-source font; see its repository and license for details: https://github.com/microsoft/Selawik
+- Xbox One Dashboard Icons Recreation by "PiccoloV" at:
+https://www.deviantart.com/piccolov/art/Xbox-One-Dashboard-Icons-transparent-background-431327133
 
 # License
 - This project is released under the MIT License. See the project's LICENSE file for the full text: https://github.com/NexilFromNullFrame/XLaunch/blob/main/LICENSE
