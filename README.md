@@ -1,3 +1,5 @@
+<img width="256" height="256" alt="XLauncherLogoWhiteBG" src="https://github.com/user-attachments/assets/78435814-0d9c-4b3a-8379-9e7b9a8184d3" />
+
 # XLaunch
 The Xbox One Metro-inspired Launcher!
 
