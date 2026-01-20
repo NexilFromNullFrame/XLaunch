@@ -42,8 +42,3 @@ https://www.deviantart.com/piccolov/art/Xbox-One-Dashboard-Icons-transparent-bac
   - There is no warranty — it may have bugs or break, and the authors are not responsible if something goes wrong.
   - The authors are not liable for damages, data loss, or other consequences from using this software.
 - Including third-party names, trademarks, or materials in this project does not mean those parties endorse or are associated with the project.
-
-If you'd like, I can:
-- Add or change any of the links above to more specific pages.
-- Widen or narrow the disclaimer or attribution language.
-- Commit this change directly to main (done) or open a pull request instead.
