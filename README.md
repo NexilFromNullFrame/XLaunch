@@ -1,4 +1,4 @@
-<img width="256" height="256" alt="XLauncherLogoWhiteBG" src="https://github.com/user-attachments/assets/78435814-0d9c-4b3a-8379-9e7b9a8184d3" />
+  <img width="256" height="256" alt="XLauncherLogoWhiteBG" src="https://github.com/user-attachments/assets/78435814-0d9c-4b3a-8379-9e7b9a8184d3" />
 
 # XLaunch
 The Xbox One Metro-inspired Launcher!
@@ -16,9 +16,9 @@ The Xbox One Metro-inspired Launcher!
     - Game shortcut or executable path (optional for shell games which have no function)
 - You can make a game shortcut on the "My games & apps" app on the dashboard after creating an account.
 
-# Notice
-- This launcher is very rough and may lack polish (minimal animations and a work-in-progress app set).
-- This project is published under the MIT License; you are free to change, contribute, redistribute, and make derivative works per that license.
+> \[!NOTE]
+> This launcher is very rough and may lack polish (minimal animations and a work-in-progress app set).
+> This project is published under the MIT License; you are free to change, contribute, redistribute, and make derivative works per that license.
 
 # Contribute
 - Report bugs and requests via GitHub Issues so contributors can find and fix them.
