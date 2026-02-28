@@ -27,7 +27,7 @@
 ## Contribute
 
 - Report bugs and requests via [GitHub Issues](https://github.com/NexilFromNullFrame/XLaunch/issues) so contributors can find and fix them.
-- Want to contribute? → **[See CONTRIBUTORS.md](#contributors)**
+- Want to contribute? → **[See CONTRIBUTING.md](#contributing)**
 
 ## Credits & Trademarks
 
