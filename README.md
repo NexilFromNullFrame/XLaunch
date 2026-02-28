@@ -2,6 +2,27 @@
   <img width="256" height="256" alt="XLauncherLogoWhiteBG" src="https://github.com/user-attachments/assets/78435814-0d9c-4b3a-8379-9e7b9a8184d3" />
   <h1>XLaunch</h1>
   <p>The Xbox One Metro-inspired Launcher!</p>
+
+<p>
+    <a href="https://github.com/NexilFromNullFrame/XLaunch/releases">
+      <img src="https://img.shields.io/github/v/release/NexilFromNullFrame/XLaunch?style=for-the-badge&color=green&label=Latest%20Release" alt="Latest Release">
+    </a>
+    <a href="https://github.com/NexilFromNullFrame/XLaunch/stargazers">
+      <img src="https://img.shields.io/github/stars/NexilFromNullFrame/XLaunch?style=for-the-badge" alt="Stars">
+    </a>
+    <a href="https://github.com/NexilFromNullFrame/XLaunch/forks">
+      <img src="https://img.shields.io/github/forks/NexilFromNullFrame/XLaunch?style=for-the-badge" alt="Forks">
+    </a>
+    <a href="https://github.com/NexilFromNullFrame/XLaunch/issues">
+      <img src="https://img.shields.io/github/issues/NexilFromNullFrame/XLaunch?style=for-the-badge&color=red" alt="Issues">
+    </a>
+    <a href="https://github.com/NexilFromNullFrame/XLaunch/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/NexilFromNullFrame/XLaunch?style=for-the-badge&color=blue" alt="License">
+    </a>
+    <a href="https://github.com/NexilFromNullFrame/XLaunch/commits/main">
+      <img src="https://img.shields.io/github/last-commit/NexilFromNullFrame/XLaunch?style=for-the-badge&color=purple" alt="Last Commit">
+    </a>
+  </p>
 </div>
 
 <br>
@@ -27,7 +48,7 @@
 ## Contribute
 
 - Report bugs and requests via [GitHub Issues](https://github.com/NexilFromNullFrame/XLaunch/issues) so contributors can find and fix them.
-- Want to contribute? → **[See CONTRIBUTING.md](#contributing)**
+- Want to contribute? → **[See CONTRIBUTING.md](https://github.com/NexilFromNullFrame/XLaunch/blob/main/CONTRIBUTING.md)**
 
 ## Credits & Trademarks
 
