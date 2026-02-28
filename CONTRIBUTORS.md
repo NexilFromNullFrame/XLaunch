@@ -4,7 +4,7 @@
 - You Have to Use GDScript for Code Since the Launcher WAS Developed Using Godot 4.5
 
 ## Personal Reason for Release
-i'm Happy that You Are Considering Helping This Project, Since Really the base was a Big Learning Moment For me, But Having This ~Semi-Recreation (of the Xbox One Launch (Metro) Dashboard Which People Miss) Vaulted in my Drive Felt Too Stupid, so i Decided to leave it for the Community to Grow it and Eventually Evolve it into a Unified Launcher That Would Rival the Likes of Playnite and Such
+i'm Happy that You Are Considering Helping This Project, Since Really the base was a Big Learning Moment For me, But Having This ~Semi-Recreation (of the Xbox One Launch (Metro) Dashboard Which Some People Miss) Vaulted in my Drive Felt Too Stupid, so i Decided to leave it for the Community to Grow it and Eventually Evolve it into a Unified Launcher That Would Rival the Likes of Playnite and Such
 
 ## Reprimandment (Also Known as Your Reward For Contributing)
 - You'll be Added into the App's Credits (As XLaunch Contributor)
