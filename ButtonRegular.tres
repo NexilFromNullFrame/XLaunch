@@ -1,0 +1,38 @@
+[gd_resource type="Theme" format=3 uid="uid://cf5m0mfatfs7j"]
+
+[ext_resource type="FontFile" uid="uid://tgr81pjagifs" path="res://Fonts/segoeuil.ttf" id="2_c86gw"]
+[ext_resource type="FontFile" uid="uid://djh5rvh427yyt" path="res://Fonts/segoeui.ttf" id="3_knxxr"]
+[ext_resource type="FontFile" uid="uid://difl14jipgduq" path="res://Fonts/seguisb.ttf" id="3_tckf8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tc6uj"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c86gw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_olt8n"]
+bg_color = Color(0.19215687, 0.5254902, 0.015686275, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ktig4"]
+bg_color = Color(0.19215687, 0.5254902, 0.015686275, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[resource]
+default_font = ExtResource("2_c86gw")
+/colors/Button = Color(0.19215687, 0.5254902, 0.015686275, 1)
+/colors/Non_HeaderText = Color(0.6745098, 0.6745098, 0.6745098, 1)
+Button/fonts/Light = ExtResource("2_c86gw")
+Button/styles/focus = SubResource("StyleBoxFlat_tc6uj")
+Button/styles/hover = SubResource("StyleBoxEmpty_c86gw")
+Button/styles/normal = SubResource("StyleBoxFlat_olt8n")
+Button/styles/pressed = SubResource("StyleBoxFlat_ktig4")
+Label/fonts/Light = ExtResource("2_c86gw")
+Label/fonts/Regular = ExtResource("3_knxxr")
+Label/fonts/Semi_Bold = ExtResource("3_tckf8")
