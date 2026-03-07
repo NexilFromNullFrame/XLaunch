@@ -1,0 +1,220 @@
+[gd_scene format=3 uid="uid://t5junpe72ufv"]
+
+[ext_resource type="Script" uid="uid://kv32wfvbbou1" path="res://Scripts/log_in.gd" id="1_6m26g"]
+[ext_resource type="Theme" uid="uid://cf5m0mfatfs7j" path="res://Colors/ButtonRegular.tres" id="2_0l4rw"]
+[ext_resource type="AudioStream" uid="uid://3l4yrckcb8pg" path="res://Audio/Select.wav" id="2_6m26g"]
+[ext_resource type="Texture2D" uid="uid://0m2315h8kwty" path="res://Assets/RecoverFrom.png" id="2_blnih"]
+[ext_resource type="PackedScene" uid="uid://cb2s15aj38icj" path="res://scenes/ProfileTileTemplate.tscn" id="2_u06c8"]
+[ext_resource type="Texture2D" uid="uid://3ssyr75ftsou" path="res://Assets/RecoverFrominternet.png" id="3_d3uw7"]
+[ext_resource type="AudioStream" uid="uid://cwbodqruvlf3f" path="res://Audio/LogIn.wav" id="3_hdctw"]
+[ext_resource type="StyleBox" uid="uid://cyilfebht0d1o" path="res://Colors/GreenUnderline.tres" id="4_d3uw7"]
+[ext_resource type="FontFile" uid="uid://buvo6vqbp5hhk" path="res://Fonts/seguibl.ttf" id="5_u06c8"]
+[ext_resource type="AudioStream" uid="uid://buhpdfsmdm5dq" path="res://Audio/XboxOneFocus.wav" id="7_blnih"]
+[ext_resource type="FontFile" uid="uid://tgr81pjagifs" path="res://Fonts/segoeuil.ttf" id="8_5bc0e"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tmtqm"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u06c8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5bc0e"]
+bg_color = Color(0.19215687, 0.5254902, 0.015686275, 0)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u06c8"]
+bg_color = Color(0.19215687, 0.5254902, 0.015686275, 0)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+
+[node name="Log-In" type="Control" unique_id=183009053]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6m26g")
+
+[node name="BG" type="Panel" parent="." unique_id=375195966]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_tmtqm")
+
+[node name="Accounts" type="ScrollContainer" parent="BG" unique_id=1072253381]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -857.0
+offset_top = -160.0
+offset_right = 857.0
+offset_bottom = 193.0
+grow_horizontal = 2
+grow_vertical = 2
+localize_numeral_system = false
+follow_focus = true
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 3
+
+[node name="AccountList" type="HBoxContainer" parent="BG/Accounts" unique_id=814760633]
+custom_minimum_size = Vector2(305, 305)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 65
+
+[node name="Template" parent="BG/Accounts/AccountList" unique_id=1589454325 instance=ExtResource("2_u06c8")]
+visible = false
+custom_minimum_size = Vector2(280, 280)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+icon_alignment = 1
+expand_icon = true
+
+[node name="Gamertag" parent="BG/Accounts/AccountList/Template" index="0"]
+anchor_left = 0.512
+anchor_top = 1.036
+anchor_right = 0.512
+anchor_bottom = 1.036
+offset_left = -152.36
+offset_top = -17.080048
+offset_right = 152.64
+offset_bottom = 16.919952
+theme = ExtResource("2_0l4rw")
+theme_override_font_sizes/font_size = 25
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SmallIconHelper" parent="BG/Accounts/AccountList/Template" index="1"]
+mouse_filter = 2
+
+[node name="SmallGamerIcon" parent="BG/Accounts/AccountList/Template/SmallIconHelper" index="0"]
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Recover" type="Button" parent="BG/Accounts/AccountList" unique_id=1245282794]
+custom_minimum_size = Vector2(290, 280)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme = ExtResource("2_0l4rw")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_u06c8")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5bc0e")
+theme_override_styles/focus = ExtResource("4_d3uw7")
+icon = ExtResource("3_d3uw7")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Gamertag" type="Label" parent="BG/Accounts/AccountList/Recover" unique_id=1339116916]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.47000003
+anchor_top = 1.036
+anchor_right = 0.47000003
+anchor_bottom = 1.036
+offset_left = -152.6
+offset_top = -17.080048
+offset_right = 152.4
+offset_bottom = 16.919952
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_0l4rw")
+theme_override_font_sizes/font_size = 25
+text = "Recover From Xbox Live®️"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Create" type="Button" parent="BG/Accounts/AccountList" unique_id=595563868]
+custom_minimum_size = Vector2(280, 280)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme = ExtResource("2_0l4rw")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_u06c8")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_u06c8")
+theme_override_styles/focus = ExtResource("4_d3uw7")
+icon = ExtResource("2_blnih")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Gamertag" type="Label" parent="BG/Accounts/AccountList/Create" unique_id=1229082370]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.43
+anchor_top = 1.036
+anchor_right = 0.45900002
+anchor_bottom = 1.036
+offset_left = -152.40002
+offset_top = -17.080048
+offset_right = 144.48
+offset_bottom = 16.919952
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_0l4rw")
+theme_override_font_sizes/font_size = 25
+text = "Create New"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="BG/Accounts/AccountList/Create" unique_id=1785091479]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.827
+anchor_top = 0.5
+anchor_right = 0.827
+anchor_bottom = 0.5
+offset_left = -31.560013
+offset_top = -73.0
+offset_right = 31.288467
+offset_bottom = 36.0
+theme_override_fonts/font = ExtResource("5_u06c8")
+theme_override_font_sizes/font_size = 81
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sign" type="Label" parent="." unique_id=239907831]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.125
+anchor_right = 0.5
+anchor_bottom = 0.125
+offset_left = -368.0
+offset_top = -65.0
+offset_right = 368.0
+offset_bottom = 66.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("8_5bc0e")
+theme_override_font_sizes/font_size = 77
+text = "Who's Playing Today?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Select" type="AudioStreamPlayer" parent="." unique_id=1372050337]
+stream = ExtResource("2_6m26g")
+
+[node name="LogIn" type="AudioStreamPlayer" parent="." unique_id=835481216]
+stream = ExtResource("3_hdctw")
+
+[node name="Focus" type="AudioStreamPlayer" parent="." unique_id=1028950769]
+stream = ExtResource("7_blnih")
+
+[connection signal="pressed" from="BG/Accounts/AccountList/Recover" to="." method="_on_account_Recover_pressed"]
+[connection signal="pressed" from="BG/Accounts/AccountList/Create" to="." method="_on_createAcc_pressed"]
+
+[editable path="BG/Accounts/AccountList/Template"]

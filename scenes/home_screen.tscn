@@ -1,0 +1,647 @@
+[gd_scene format=3 uid="uid://c6oenc0eenwvw"]
+
+[ext_resource type="Script" uid="uid://dmlltjecyv6eq" path="res://Scripts/home_screen.gd" id="1_siet5"]
+[ext_resource type="Theme" uid="uid://cf5m0mfatfs7j" path="res://Colors/ButtonRegular.tres" id="2_p8i1v"]
+[ext_resource type="Texture2D" uid="uid://1o2ds6fe3k2f" path="res://Assets/Sign-in.png" id="3_y6vhh"]
+[ext_resource type="AudioStream" uid="uid://bjukb06854sob" path="res://Audio/MenuMinimize.wav" id="4_gfroc"]
+[ext_resource type="AudioStream" uid="uid://3l4yrckcb8pg" path="res://Audio/Select.wav" id="5_aeotl"]
+[ext_resource type="Texture2D" uid="uid://bme2dcr1eifvl" path="res://Assets/XLauncherLogoWhiteBG.png" id="6_6nfj5"]
+[ext_resource type="StyleBox" uid="uid://bg3scnjahoks7" path="res://Colors/NoRecents.tres" id="7_db6kr"]
+[ext_resource type="StyleBox" uid="uid://bk5k3jdk8kaky" path="res://Colors/NamebarTiles.tres" id="8_hfyks"]
+[ext_resource type="FontFile" uid="uid://dpb8ygrlahuh" path="res://Fonts/SegoeXbox.ttf" id="9_kytt3"]
+[ext_resource type="Texture2D" uid="uid://xaokn1vv7l8q" path="res://Assets/Snap.png" id="10_218ma"]
+[ext_resource type="Texture2D" uid="uid://i80dkch7n5qj" path="res://Assets/allapps.png" id="11_nnhu4"]
+[ext_resource type="Texture2D" uid="uid://ot4fdpgnhd6q" path="res://Assets/Disk.png" id="12_ijmmk"]
+[ext_resource type="Texture2D" uid="uid://c7as87lcfooae" path="res://Assets/Friends.png" id="13_o5fsg"]
+[ext_resource type="Texture2D" uid="uid://evjsvhmmjjru" path="res://Assets/Settings.png" id="14_fjd61"]
+[ext_resource type="Texture2D" uid="uid://cobkwdulqydv0" path="res://Assets/messages.png" id="15_v1fj8"]
+[ext_resource type="Texture2D" uid="uid://chtop5r8ap5k4" path="res://Assets/XLauncherLogo.png" id="16_x7pad"]
+[ext_resource type="FontFile" uid="uid://djh5rvh427yyt" path="res://Fonts/segoeui.ttf" id="17_t2kqi"]
+[ext_resource type="Texture2D" uid="uid://c2ch4msy2y2rh" path="res://Assets/GScore.png" id="18_xoohm"]
+[ext_resource type="AudioStream" uid="uid://buhpdfsmdm5dq" path="res://Audio/XboxOneFocus.wav" id="19_renrx"]
+[ext_resource type="AudioStream" uid="uid://clnto1k21vo4" path="res://Audio/PageLeft.wav" id="20_aqqai"]
+[ext_resource type="AudioStream" uid="uid://drg6osh687ml1" path="res://Audio/PageRight.wav" id="21_s47yi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rai0l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7tdw8"]
+bg_color = Color(0.19215687, 0.5254902, 0.015686275, 1)
+draw_center = false
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ikjqu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4kdek"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_whai3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8sfkg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rai0l"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_bottom = 3
+border_color = Color(0.19215687, 0.5254902, 0.015686275, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7tdw8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fbpv5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j6yog"]
+
+[node name="HomeScreen" type="Control" unique_id=1355753822]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_siet5")
+
+[node name="BG" type="ColorRect" parent="." unique_id=785553008]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="CurrentUser" type="Button" parent="BG" unique_id=1737636159]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.078
+anchor_top = 0.102000006
+anchor_right = 0.078
+anchor_bottom = 0.102000006
+offset_left = -49.76001
+offset_top = -50.160004
+offset_right = 51.23999
+offset_bottom = 50.839996
+theme = ExtResource("2_p8i1v")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rai0l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7tdw8")
+icon = ExtResource("3_y6vhh")
+icon_alignment = 1
+expand_icon = true
+
+[node name="MenuMinimize" type="AudioStreamPlayer" parent="BG/CurrentUser" unique_id=1085724934]
+stream = ExtResource("4_gfroc")
+
+[node name="Select" type="AudioStreamPlayer" parent="BG/CurrentUser" unique_id=590568495]
+stream = ExtResource("5_aeotl")
+
+[node name="XLaunch" type="TextureRect" parent="BG" unique_id=290758068]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -223.0
+offset_top = 60.0
+offset_right = -112.0
+offset_bottom = 171.0
+texture = ExtResource("6_6nfj5")
+expand_mode = 1
+
+[node name="LastApp" type="Button" parent="BG" unique_id=2052829927]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.39200002
+anchor_top = 0.45600003
+anchor_right = 0.39200002
+anchor_bottom = 0.45600003
+offset_left = -409.64
+offset_top = -205.48004
+offset_right = 411.36
+offset_bottom = 201.51996
+grow_horizontal = 2
+grow_vertical = 2
+focus_neighbor_left = NodePath("../Profile")
+focus_neighbor_right = NodePath("../Snap")
+focus_neighbor_bottom = NodePath("../Store")
+theme = ExtResource("2_p8i1v")
+theme_override_styles/normal = ExtResource("7_db6kr")
+icon_alignment = 1
+expand_icon = true
+
+[node name="RecentName" type="Panel" parent="BG/LastApp" unique_id=1946664883]
+top_level = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.18200001
+anchor_top = 0.63600004
+anchor_right = 0.18200001
+anchor_bottom = 0.63600004
+offset_left = 0.55996704
+offset_top = -72.880066
+offset_right = 621.55994
+offset_bottom = 0.11993408
+grow_vertical = 0
+theme_override_styles/panel = ExtResource("8_hfyks")
+
+[node name="Name" type="Label" parent="BG/LastApp/RecentName" unique_id=1848533599]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 60
+vertical_alignment = 1
+
+[node name="Select" type="AudioStreamPlayer" parent="BG/LastApp" unique_id=830279861]
+stream = ExtResource("5_aeotl")
+
+[node name="RecentAppIcon" type="TextureRect" parent="BG/LastApp" unique_id=1307109841]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.59164
+offset_top = -198.0
+offset_right = 200.59164
+offset_bottom = 198.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Snap" type="Button" parent="BG" unique_id=911252185]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.66200006
+anchor_top = 0.358
+anchor_right = 0.66200006
+anchor_bottom = 0.358
+offset_left = -100.04016
+offset_top = -99.640015
+offset_right = 99.95984
+offset_bottom = 100.359985
+grow_horizontal = 2
+grow_vertical = 2
+focus_neighbor_bottom = NodePath("../MyGames")
+theme = ExtResource("2_p8i1v")
+theme_override_fonts/font = ExtResource("9_kytt3")
+
+[node name="Icon" type="TextureRect" parent="BG/Snap" unique_id=2124642682]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.214573
+offset_top = -50.375
+offset_right = 51.214573
+offset_bottom = 50.375
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_218ma")
+expand_mode = 1
+
+[node name="title" type="Label" parent="BG/Snap" unique_id=1204302004]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -19.0
+offset_right = 40.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 25
+text = "Snap"
+vertical_alignment = 2
+
+[node name="Select" type="AudioStreamPlayer" parent="BG/Snap" unique_id=897305405]
+stream = ExtResource("5_aeotl")
+
+[node name="MyGames" type="Button" parent="BG" unique_id=39033620]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.66200006
+anchor_top = 0.55
+anchor_right = 0.66200006
+anchor_bottom = 0.55
+offset_left = -100.04016
+offset_top = -100.0
+offset_right = 99.95984
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_neighbor_bottom = NodePath("../DiskGame")
+theme = ExtResource("2_p8i1v")
+theme_override_fonts/font = ExtResource("9_kytt3")
+
+[node name="Icon" type="TextureRect" parent="BG/MyGames" unique_id=537291443]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.47351
+offset_top = -30.5
+offset_right = 43.47351
+offset_bottom = 30.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_nnhu4")
+expand_mode = 1
+
+[node name="title" type="Label" parent="BG/MyGames" unique_id=728561390]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -75.0
+offset_right = 197.0
+grow_vertical = 0
+theme_override_constants/paragraph_spacing = -7
+theme_override_font_sizes/font_size = 25
+text = "My games &
+apps"
+vertical_alignment = 2
+
+[node name="Select" type="AudioStreamPlayer" parent="BG/MyGames" unique_id=1085752962]
+stream = ExtResource("5_aeotl")
+
+[node name="DiskGame" type="Button" parent="BG" unique_id=1443184458]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.66200006
+anchor_top = 0.74200004
+anchor_right = 0.66200006
+anchor_bottom = 0.74200004
+offset_left = -100.04016
+offset_top = -100.36005
+offset_right = 99.95984
+offset_bottom = 99.63995
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_p8i1v")
+theme_override_fonts/font = ExtResource("9_kytt3")
+
+[node name="Icon" type="TextureRect" parent="BG/DiskGame" unique_id=1310080948]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.07811
+offset_top = -38.4375
+offset_right = 39.07811
+offset_bottom = 38.4375
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_ijmmk")
+expand_mode = 1
+
+[node name="title" type="Label" parent="BG/DiskGame" unique_id=791214608]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -19.0
+offset_right = 40.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 25
+text = "Insert disk"
+vertical_alignment = 2
+
+[node name="Select" type="AudioStreamPlayer" parent="BG/DiskGame" unique_id=1394020818]
+stream = ExtResource("5_aeotl")
+
+[node name="Party" type="Button" parent="BG" unique_id=1486908174]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.554
+anchor_top = 0.74200004
+anchor_right = 0.554
+anchor_bottom = 0.74200004
+offset_left = -99.68005
+offset_top = -100.36005
+offset_right = 100.31995
+offset_bottom = 99.63995
+grow_horizontal = 2
+grow_vertical = 2
+focus_neighbor_left = NodePath("../Settings")
+focus_neighbor_top = NodePath("../LastApp")
+focus_neighbor_right = NodePath("../DiskGame")
+theme = ExtResource("2_p8i1v")
+theme_override_fonts/font = ExtResource("9_kytt3")
+
+[node name="Icon" type="TextureRect" parent="BG/Party" unique_id=1781508038]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.3573
+offset_top = -50.375
+offset_right = 64.3573
+offset_bottom = 50.375
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_o5fsg")
+expand_mode = 1
+
+[node name="title" type="Label" parent="BG/Party" unique_id=1466717991]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -19.0
+offset_right = 40.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 25
+text = "Party"
+vertical_alignment = 2
+
+[node name="Select" type="AudioStreamPlayer" parent="BG/Party" unique_id=286669221]
+stream = ExtResource("5_aeotl")
+
+[node name="Settings" type="Button" parent="BG" unique_id=693155053]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.446
+anchor_top = 0.74200004
+anchor_right = 0.446
+anchor_bottom = 0.74200004
+offset_left = -99.32001
+offset_top = -100.36005
+offset_right = 100.67999
+offset_bottom = 99.63995
+grow_horizontal = 2
+grow_vertical = 2
+focus_neighbor_left = NodePath("../Messages")
+focus_neighbor_top = NodePath("../LastApp")
+focus_neighbor_right = NodePath("../Party")
+theme = ExtResource("2_p8i1v")
+theme_override_fonts/font = ExtResource("9_kytt3")
+
+[node name="Icon" type="TextureRect" parent="BG/Settings" unique_id=1623209156]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.085297
+offset_top = -41.9375
+offset_right = 46.085297
+offset_bottom = 41.9375
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_fjd61")
+expand_mode = 1
+
+[node name="title" type="Label" parent="BG/Settings" unique_id=1041605451]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -19.0
+offset_right = 40.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 25
+text = "Settings"
+vertical_alignment = 2
+
+[node name="Select" type="AudioStreamPlayer" parent="BG/Settings" unique_id=166687277]
+stream = ExtResource("5_aeotl")
+
+[node name="Messages" type="Button" parent="BG" unique_id=725346251]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.337
+anchor_top = 0.73600006
+anchor_right = 0.337
+anchor_bottom = 0.73600006
+offset_left = -97.04004
+offset_top = -93.880066
+offset_right = 102.95996
+offset_bottom = 106.119934
+grow_horizontal = 2
+grow_vertical = 2
+focus_neighbor_left = NodePath("../Store")
+focus_neighbor_top = NodePath("../LastApp")
+focus_neighbor_right = NodePath("../Settings")
+theme = ExtResource("2_p8i1v")
+theme_override_fonts/font = ExtResource("9_kytt3")
+
+[node name="Icon" type="TextureRect" parent="BG/Messages" unique_id=1029341356]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -49.30365
+offset_top = -34.9375
+offset_right = 49.30365
+offset_bottom = 34.9375
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15_v1fj8")
+expand_mode = 1
+
+[node name="title" type="Label" parent="BG/Messages" unique_id=185861672]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -19.0
+offset_right = 40.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 25
+text = "Messages"
+vertical_alignment = 2
+
+[node name="Select" type="AudioStreamPlayer" parent="BG/Messages" unique_id=1241370499]
+stream = ExtResource("5_aeotl")
+
+[node name="Store" type="Button" parent="BG" unique_id=1232165836]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.23500001
+anchor_top = 0.73600006
+anchor_right = 0.23500001
+anchor_bottom = 0.73600006
+offset_left = -108.20001
+offset_top = -93.880066
+offset_right = 91.79999
+offset_bottom = 106.119934
+grow_horizontal = 2
+grow_vertical = 2
+focus_neighbor_left = NodePath("../Profile")
+focus_neighbor_top = NodePath("../LastApp")
+focus_neighbor_right = NodePath("../Messages")
+theme = ExtResource("2_p8i1v")
+theme_override_fonts/font = ExtResource("9_kytt3")
+
+[node name="Icon" type="TextureRect" parent="BG/Store" unique_id=1811587904]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.214573
+offset_top = -50.375
+offset_right = 51.21457
+offset_bottom = 50.375
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("16_x7pad")
+expand_mode = 1
+
+[node name="title" type="Label" parent="BG/Store" unique_id=1956057954]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -19.0
+offset_right = 40.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 25
+text = "Store"
+vertical_alignment = 2
+
+[node name="Select" type="AudioStreamPlayer" parent="BG/Store" unique_id=1638957349]
+stream = ExtResource("5_aeotl")
+
+[node name="FastBar" type="HBoxContainer" parent="BG" unique_id=726385637]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.21900001
+anchor_right = 0.5
+anchor_bottom = 0.21900001
+offset_left = -960.0
+offset_top = -37.52002
+offset_right = 960.0
+offset_bottom = 37.47998
+
+[node name="Margin" type="TextureRect" parent="BG/FastBar" unique_id=793297197]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
+
+[node name="TabBar" type="TabBar" parent="BG/FastBar" unique_id=1378550985]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_p8i1v")
+theme_override_colors/font_unselected_color = Color(0.25882354, 0.25882354, 0.25882354, 1)
+theme_override_constants/tab_separation = 70
+theme_override_font_sizes/font_size = 45
+theme_override_styles/tab_unselected = SubResource("StyleBoxEmpty_ikjqu")
+theme_override_styles/tab_hovered = SubResource("StyleBoxEmpty_4kdek")
+theme_override_styles/tab_selected = SubResource("StyleBoxEmpty_whai3")
+theme_override_styles/tab_disabled = SubResource("StyleBoxEmpty_8sfkg")
+theme_override_styles/tab_focus = SubResource("StyleBoxFlat_rai0l")
+theme_override_styles/button_pressed = SubResource("StyleBoxEmpty_7tdw8")
+theme_override_styles/button_highlight = SubResource("StyleBoxEmpty_fbpv5")
+current_tab = 1
+close_with_middle_mouse = false
+scrolling_enabled = false
+tab_count = 3
+tab_0/title = "Pins"
+tab_1/title = "Home"
+tab_2/title = "Store"
+
+[node name="Profile" type="Button" parent="BG" unique_id=256941144]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.12100001
+anchor_top = 0.55
+anchor_right = 0.12100001
+anchor_bottom = 0.55
+offset_left = -97.32001
+offset_top = -307.0
+offset_right = 103.67999
+offset_bottom = 307.0
+theme = ExtResource("2_p8i1v")
+
+[node name="Select" type="AudioStreamPlayer" parent="BG/Profile" unique_id=296803855]
+stream = ExtResource("5_aeotl")
+
+[node name="GamerPic" type="TextureRect" parent="BG/Profile" unique_id=1895330956]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.164
+anchor_right = 0.5
+anchor_bottom = 0.164
+offset_left = -100.5
+offset_top = -100.696
+offset_right = 100.5
+offset_bottom = 100.304
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DispName" type="Label" parent="BG/Profile" unique_id=1387848250]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.34100002
+anchor_top = 0.43600002
+anchor_right = 0.34100002
+anchor_bottom = 0.43600002
+offset_left = -58.541
+offset_top = -33.70401
+offset_right = 78.459
+offset_bottom = 34.29599
+theme_override_constants/line_spacing = 13
+theme_override_font_sizes/font_size = 22
+
+[node name="GamerScore" type="Label" parent="BG/Profile" unique_id=1106918203]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.522
+anchor_top = 0.521
+anchor_right = 0.522
+anchor_bottom = 0.521
+offset_left = -50.922005
+offset_top = -17.894012
+offset_right = 57.077995
+offset_bottom = 22.105988
+theme_override_fonts/font = ExtResource("17_t2kqi")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j6yog")
+vertical_alignment = 1
+
+[node name="GScore icon" type="TextureRect" parent="BG/Profile" unique_id=1959455072]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.15200001
+anchor_top = 0.52400005
+anchor_right = 0.15200001
+anchor_bottom = 0.52400005
+offset_left = -20.552002
+offset_top = -19.736023
+offset_right = 20.447998
+offset_bottom = 20.263977
+texture = ExtResource("18_xoohm")
+expand_mode = 1
+
+[node name="Focus" type="AudioStreamPlayer" parent="." unique_id=1775145434]
+stream = ExtResource("19_renrx")
+
+[node name="PageR" type="AudioStreamPlayer" parent="." unique_id=71167905]
+stream = ExtResource("20_aqqai")
+
+[node name="PageL" type="AudioStreamPlayer" parent="." unique_id=968489119]
+stream = ExtResource("21_s47yi")
+
+[connection signal="pressed" from="BG/CurrentUser" to="." method="_on_current_user_pressed"]
+[connection signal="focus_entered" from="BG/LastApp" to="." method="_on_last_app_Tile_focus_entered"]
+[connection signal="focus_exited" from="BG/LastApp" to="." method="_on_last_app_Tile_focus_exited"]
+[connection signal="pressed" from="BG/LastApp" to="." method="_on_last_app_pressed"]
+[connection signal="pressed" from="BG/MyGames" to="." method="_on_my_games_pressed"]
+[connection signal="pressed" from="BG/Settings" to="." method="_on_settingsTile_pressed"]
+[connection signal="pressed" from="BG/Store" to="." method="_on_store_pressed"]
+[connection signal="tab_changed" from="BG/FastBar/TabBar" to="." method="_on_Fastbar_bar_tab_changed"]
+[connection signal="pressed" from="BG/Profile" to="." method="_on_profileTILE_pressed"]

@@ -1,0 +1,930 @@
+[gd_scene format=3 uid="uid://8kkyjeykuled"]
+
+[ext_resource type="Script" uid="uid://cw5v7g8u3n5tq" path="res://Scripts/settings.gd" id="1_7kvyq"]
+[ext_resource type="AudioStream" uid="uid://gpmfdvgmv0mn" path="res://Audio/Back.wav" id="2_ql1j0"]
+[ext_resource type="AudioStream" uid="uid://buhpdfsmdm5dq" path="res://Audio/XboxOneFocus.wav" id="3_6dbjw"]
+[ext_resource type="AudioStream" uid="uid://3l4yrckcb8pg" path="res://Audio/Select.wav" id="4_g5y2q"]
+[ext_resource type="Texture2D" uid="uid://bme2dcr1eifvl" path="res://Assets/XLauncherLogoWhiteBG.png" id="5_k00b3"]
+[ext_resource type="Theme" uid="uid://cf5m0mfatfs7j" path="res://Colors/ButtonRegular.tres" id="6_aisiw"]
+[ext_resource type="StyleBox" uid="uid://bgefha8c3ww7d" path="res://Colors/TilePressed.tres" id="7_f1e71"]
+[ext_resource type="FontFile" uid="uid://djh5rvh427yyt" path="res://Fonts/segoeui.ttf" id="8_gcetw"]
+[ext_resource type="Texture2D" uid="uid://1o2ds6fe3k2f" path="res://Assets/Sign-in.png" id="9_i24gk"]
+[ext_resource type="Texture2D" uid="uid://mrd3hw7sjdhj" path="res://Assets/PrivacyEye.png" id="10_3gwh8"]
+[ext_resource type="Texture2D" uid="uid://dw7o1qb813j08" path="res://Assets/billingCard.png" id="11_q4e06"]
+[ext_resource type="Texture2D" uid="uid://b7iow1hw5klnt" path="res://Assets/Subs.png" id="12_w3ind"]
+[ext_resource type="Texture2D" uid="uid://depp7b2nap1ui" path="res://Assets/myhome.png" id="13_nilcw"]
+[ext_resource type="Texture2D" uid="uid://h1od0owondj6" path="res://Assets/Network.png" id="14_6dg6e"]
+[ext_resource type="Texture2D" uid="uid://cimtc5to5b8t0" path="res://Assets/SteamLogo.png" id="15_g1x8m"]
+[ext_resource type="Texture2D" uid="uid://bytngrh4n4ev6" path="res://Assets/EGSLogo.png" id="16_5tgmq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3j6r5"]
+bg_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.49019608, 0.49019608, 0.49019608, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3lj6o"]
+bg_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ohexs"]
+bg_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6mhpt"]
+bg_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fdp2d"]
+load_path = "res://.godot/imported/MSStoreLight.svg-e970a0910b8fbd005a3341e52b765d76.ctex"
+
+[sub_resource type="Animation" id="Animation_tk3m0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PersonalSettings:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(100, 294)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ConsoleSettings:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(600, 294)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Title:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(100, 175)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CatergoryC:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(600, 233)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("GamerTag:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(100, 233)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ConsoleSettings:theme_override_constants/h_separation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [7]
+}
+
+[sub_resource type="Animation" id="Animation_fdp2d"]
+resource_name = "Transition"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ConsoleSettings:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.53333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(600, 294), Vector2(600, 1198)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PersonalSettings:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.53333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(100, 294), Vector2(100, 1198)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CatergoryC:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.53333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(600, 233), Vector2(600, 1134)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("GamerTag:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.53333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(100, 233), Vector2(100, 1134)]
+}
+
+[sub_resource type="Animation" id="Animation_e0y8d"]
+resource_name = "TransitionOut"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ConsoleSettings:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.53333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(600, 294), Vector2(600, 1198)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PersonalSettings:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.53333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(100, 294), Vector2(100, 1198)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CatergoryC:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.53333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(600, 233), Vector2(600, 1134)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("GamerTag:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.53333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(100, 233), Vector2(100, 1134)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Title:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.6333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(100, 175), Vector2(100, 1099)]
+}
+
+[sub_resource type="Animation" id="Animation_7eiv2"]
+resource_name = "intro"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PersonalSettings:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2058, 294), Vector2(100, 294)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ConsoleSettings:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.6666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(3147, 294), Vector2(600, 294)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Title:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(943, 171), Vector2(100, 175)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CatergoryC:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.76666665),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1579, 233), Vector2(600, 233)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("GamerTag:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1065, 233), Vector2(100, 233)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ConsoleSettings:theme_override_constants/h_separation")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.46666667, 0.76),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [57, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fdp2d"]
+_data = {
+&"RESET": SubResource("Animation_tk3m0"),
+&"Transition": SubResource("Animation_fdp2d"),
+&"TransitionOut": SubResource("Animation_e0y8d"),
+&"intro": SubResource("Animation_7eiv2")
+}
+
+[node name="Settings" type="Control" unique_id=2006477515]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7kvyq")
+
+[node name="BG" type="ColorRect" parent="." unique_id=1220116211]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.05490196, 0.05490196, 0.05490196, 1)
+
+[node name="Back" type="AudioStreamPlayer" parent="." unique_id=695185592]
+stream = ExtResource("2_ql1j0")
+
+[node name="Focus" type="AudioStreamPlayer" parent="." unique_id=653490641]
+stream = ExtResource("3_6dbjw")
+
+[node name="Select" type="AudioStreamPlayer" parent="." unique_id=1647857566]
+stream = ExtResource("4_g5y2q")
+
+[node name="XLaunch" type="TextureRect" parent="." unique_id=1518909730]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -223.0
+offset_top = 60.0
+offset_right = -112.0
+offset_bottom = 171.0
+grow_horizontal = 0
+texture = ExtResource("5_k00b3")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="." unique_id=1569720385]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.052
+anchor_top = 0.19000001
+anchor_right = 0.052
+anchor_bottom = 0.19000001
+offset_left = 0.15999603
+offset_top = -30.200012
+offset_right = 479.1655
+offset_bottom = 24.799988
+theme = ExtResource("6_aisiw")
+theme_override_font_sizes/font_size = 45
+text = "Settings"
+vertical_alignment = 1
+
+[node name="GamerTag" type="Label" parent="." unique_id=376989902]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.052
+anchor_top = 0.24400002
+anchor_right = 0.052
+anchor_bottom = 0.24400002
+offset_left = 0.15999603
+offset_top = -30.52002
+offset_right = 420.1578
+offset_bottom = 30.47998
+theme = ExtResource("6_aisiw")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 22
+vertical_alignment = 1
+uppercase = true
+
+[node name="CatergoryC" type="Label" parent="." unique_id=2005711657]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.312
+anchor_top = 0.24400002
+anchor_right = 0.312
+anchor_bottom = 0.24400002
+offset_left = 0.95996094
+offset_top = -30.52002
+offset_right = 479.95923
+offset_bottom = 30.480347
+theme = ExtResource("6_aisiw")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 22
+text = "console"
+vertical_alignment = 1
+uppercase = true
+
+[node name="PersonalSettings" type="VBoxContainer" parent="." unique_id=987171390]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.052
+anchor_top = 0.272
+anchor_right = 0.27100003
+anchor_bottom = 0.84300005
+offset_left = 0.15999603
+offset_top = 0.23999023
+offset_right = -0.3178711
+offset_bottom = -0.43933105
+theme_override_constants/separation = 8
+
+[node name="widetile" type="Button" parent="PersonalSettings" unique_id=661730691]
+custom_minimum_size = Vector2(420, 96)
+layout_mode = 2
+theme = ExtResource("6_aisiw")
+theme_override_styles/pressed = ExtResource("7_f1e71")
+theme_override_styles/focus = SubResource("StyleBoxFlat_3j6r5")
+expand_icon = true
+
+[node name="RegLabel" type="Label" parent="PersonalSettings/widetile" unique_id=149059917]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.39900002
+anchor_top = 0.51000005
+anchor_right = 0.39900002
+anchor_bottom = 0.51000005
+offset_left = -54.58
+offset_top = -16.960007
+offset_right = 54.42
+offset_bottom = 17.039993
+theme = ExtResource("6_aisiw")
+theme_override_fonts/font = ExtResource("8_gcetw")
+theme_override_font_sizes/font_size = 25
+text = "About me"
+vertical_alignment = 1
+
+[node name="widetile2" type="Button" parent="PersonalSettings" unique_id=75515009]
+custom_minimum_size = Vector2(420, 96)
+layout_mode = 2
+theme = ExtResource("6_aisiw")
+theme_override_styles/pressed = ExtResource("7_f1e71")
+theme_override_styles/focus = SubResource("StyleBoxFlat_3j6r5")
+icon = ExtResource("9_i24gk")
+expand_icon = true
+
+[node name="BigLabel" type="Label" parent="PersonalSettings/widetile2" unique_id=426826939]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.49500003
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -97.0
+offset_top = -35.520004
+offset_right = 106.0
+offset_bottom = 35.0
+theme = ExtResource("6_aisiw")
+theme_override_fonts/font = ExtResource("8_gcetw")
+theme_override_font_sizes/font_size = 25
+text = "Sign-in, profiles &
+passkey"
+vertical_alignment = 1
+
+[node name="widetile3" type="Button" parent="PersonalSettings" unique_id=1107479444]
+custom_minimum_size = Vector2(420, 96)
+layout_mode = 2
+theme = ExtResource("6_aisiw")
+theme_override_styles/pressed = ExtResource("7_f1e71")
+theme_override_styles/focus = SubResource("StyleBoxFlat_3j6r5")
+icon = ExtResource("10_3gwh8")
+expand_icon = true
+
+[node name="RegLabel" type="Label" parent="PersonalSettings/widetile3" unique_id=1803154678]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.39900002
+anchor_top = 0.51000005
+anchor_right = 0.39900002
+anchor_bottom = 0.51000005
+offset_left = -54.58
+offset_top = -16.960007
+offset_right = 54.42
+offset_bottom = 17.039993
+theme = ExtResource("6_aisiw")
+theme_override_fonts/font = ExtResource("8_gcetw")
+theme_override_font_sizes/font_size = 25
+text = "Privacy & online safety"
+vertical_alignment = 1
+
+[node name="widetile4" type="Button" parent="PersonalSettings" unique_id=1635003456]
+custom_minimum_size = Vector2(420, 96)
+layout_mode = 2
+theme = ExtResource("6_aisiw")
+theme_override_styles/pressed = ExtResource("7_f1e71")
+theme_override_styles/focus = SubResource("StyleBoxFlat_3j6r5")
+icon = ExtResource("11_q4e06")
+expand_icon = true
+
+[node name="RegLabel" type="Label" parent="PersonalSettings/widetile4" unique_id=1871665220]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.39900002
+anchor_top = 0.51000005
+anchor_right = 0.39900002
+anchor_bottom = 0.51000005
+offset_left = -54.58
+offset_top = -16.960007
+offset_right = 54.42
+offset_bottom = 17.039993
+theme = ExtResource("6_aisiw")
+theme_override_fonts/font = ExtResource("8_gcetw")
+theme_override_font_sizes/font_size = 25
+text = "Preferred store app"
+vertical_alignment = 1
+
+[node name="widetile5" type="Button" parent="PersonalSettings" unique_id=1336281108]
+custom_minimum_size = Vector2(420, 96)
+layout_mode = 2
+theme = ExtResource("6_aisiw")
+theme_override_styles/pressed = ExtResource("7_f1e71")
+theme_override_styles/focus = SubResource("StyleBoxFlat_3j6r5")
+icon = ExtResource("12_w3ind")
+expand_icon = true
+
+[node name="RegLabel" type="Label" parent="PersonalSettings/widetile5" unique_id=241618985]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.46400002
+anchor_top = 0.48400003
+anchor_right = 0.46400002
+anchor_bottom = 0.48400003
+offset_left = -81.880005
+offset_top = -32.464005
+offset_right = 82.119995
+offset_bottom = 32.535995
+theme = ExtResource("6_aisiw")
+theme_override_fonts/font = ExtResource("8_gcetw")
+theme_override_font_sizes/font_size = 25
+text = "What's new? 
+& Contributers"
+vertical_alignment = 1
+
+[node name="widetile6" type="Button" parent="PersonalSettings" unique_id=752205447]
+custom_minimum_size = Vector2(420, 96)
+layout_mode = 2
+theme = ExtResource("6_aisiw")
+theme_override_styles/pressed = ExtResource("7_f1e71")
+theme_override_styles/focus = SubResource("StyleBoxFlat_3j6r5")
+icon = ExtResource("13_nilcw")
+expand_icon = true
+
+[node name="RegLabel" type="Label" parent="PersonalSettings/widetile6" unique_id=2016626737]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.39900002
+anchor_top = 0.51000005
+anchor_right = 0.39900002
+anchor_bottom = 0.51000005
+offset_left = -54.58
+offset_top = -16.960007
+offset_right = 54.42
+offset_bottom = 17.039993
+theme = ExtResource("6_aisiw")
+theme_override_fonts/font = ExtResource("8_gcetw")
+theme_override_font_sizes/font_size = 25
+text = "My Home XLaunch"
+vertical_alignment = 1
+
+[node name="ConsoleSettings" type="GridContainer" parent="." unique_id=2139424287]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.47500002
+anchor_top = 0.56100005
+anchor_right = 0.47500002
+anchor_bottom = 0.56100005
+offset_left = -312.00006
+offset_top = -311.88007
+offset_right = 402.00067
+offset_bottom = 319.15265
+theme_override_constants/h_separation = 7
+theme_override_constants/v_separation = 7
+columns = 3
+
+[node name="Tile" type="Button" parent="ConsoleSettings" unique_id=1661143771]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme = ExtResource("6_aisiw")
+theme_override_fonts/font = ExtResource("8_gcetw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3lj6o")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_ohexs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_6mhpt")
+text = "
+
+
+
+
+
+
+Network"
+autowrap_trim_flags = 0
+icon_alignment = 1
+expand_icon = true
+
+[node name="icon" type="TextureRect" parent="ConsoleSettings/Tile" unique_id=928773831]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = -55.0
+offset_right = 55.0
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_6dg6e")
+expand_mode = 1
+
+[node name="Tile2" type="Button" parent="ConsoleSettings" unique_id=1874732083]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme = ExtResource("6_aisiw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3lj6o")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_ohexs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_6mhpt")
+
+[node name="icon" type="TextureRect" parent="ConsoleSettings/Tile2" unique_id=1429933071]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = -55.0
+offset_right = 55.0
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_6dg6e")
+expand_mode = 1
+
+[node name="Tile3" type="Button" parent="ConsoleSettings" unique_id=87593897]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme = ExtResource("6_aisiw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3lj6o")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_ohexs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_6mhpt")
+
+[node name="icon" type="TextureRect" parent="ConsoleSettings/Tile3" unique_id=2134351078]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = -55.0
+offset_right = 55.0
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_6dg6e")
+expand_mode = 1
+
+[node name="Tile4" type="Button" parent="ConsoleSettings" unique_id=388846381]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme = ExtResource("6_aisiw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3lj6o")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_ohexs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_6mhpt")
+
+[node name="icon" type="TextureRect" parent="ConsoleSettings/Tile4" unique_id=2073412313]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = -55.0
+offset_right = 55.0
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_6dg6e")
+expand_mode = 1
+
+[node name="Tile5" type="Button" parent="ConsoleSettings" unique_id=1492036859]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme = ExtResource("6_aisiw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3lj6o")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_ohexs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_6mhpt")
+
+[node name="icon" type="TextureRect" parent="ConsoleSettings/Tile5" unique_id=197885598]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = -55.0
+offset_right = 55.0
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_6dg6e")
+expand_mode = 1
+
+[node name="Tile6" type="Button" parent="ConsoleSettings" unique_id=966374731]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme = ExtResource("6_aisiw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3lj6o")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_ohexs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_6mhpt")
+
+[node name="icon" type="TextureRect" parent="ConsoleSettings/Tile6" unique_id=968868579]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = -55.0
+offset_right = 55.0
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_6dg6e")
+expand_mode = 1
+
+[node name="Tile7" type="Button" parent="ConsoleSettings" unique_id=2040971697]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme = ExtResource("6_aisiw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3lj6o")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_ohexs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_6mhpt")
+
+[node name="icon" type="TextureRect" parent="ConsoleSettings/Tile7" unique_id=1970839600]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = -53.0
+offset_right = 55.0
+offset_bottom = 57.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_6dg6e")
+expand_mode = 1
+
+[node name="Tile8" type="Button" parent="ConsoleSettings" unique_id=306889868]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme = ExtResource("6_aisiw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3lj6o")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_ohexs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_6mhpt")
+
+[node name="icon" type="TextureRect" parent="ConsoleSettings/Tile8" unique_id=1781417553]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = -55.0
+offset_right = 55.0
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_6dg6e")
+expand_mode = 1
+
+[node name="Tile9" type="Button" parent="ConsoleSettings" unique_id=666585608]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme = ExtResource("6_aisiw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3lj6o")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_ohexs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_6mhpt")
+
+[node name="icon" type="TextureRect" parent="ConsoleSettings/Tile9" unique_id=96982558]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_top = -55.0
+offset_right = 55.0
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_6dg6e")
+expand_mode = 1
+
+[node name="StoreApps" type="HBoxContainer" parent="." unique_id=56074902]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -634.25
+offset_top = -280.0
+offset_right = 634.25
+offset_bottom = 280.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("6_aisiw")
+theme_override_constants/separation = 81
+
+[node name="Native" type="Button" parent="StoreApps" unique_id=9695827 groups=["Store Apps"]]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 39
+text = "
+
+
+
+
+
+
+
+
+
+Microsoft Store"
+icon = SubResource("CompressedTexture2D_fdp2d")
+autowrap_trim_flags = 0
+icon_alignment = 1
+expand_icon = true
+
+[node name="Steam" type="Button" parent="StoreApps" unique_id=1591163844 groups=["Store Apps"]]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 39
+text = "
+
+
+
+
+
+
+
+
+
+Steam"
+icon = ExtResource("15_g1x8m")
+autowrap_trim_flags = 0
+icon_alignment = 1
+expand_icon = true
+
+[node name="Epic" type="Button" parent="StoreApps" unique_id=639594984 groups=["Store Apps"]]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "
+
+
+
+
+
+
+
+
+
+
+Epic Games Store"
+icon = ExtResource("16_5tgmq")
+autowrap_trim_flags = 0
+icon_alignment = 1
+expand_icon = true
+
+[node name="Custom" type="Button" parent="StoreApps" unique_id=1509024893 groups=["Store Apps"]]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 39
+text = "
+
+
+
+
+
+
+
+
+
+Custom"
+autowrap_trim_flags = 0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1783100301]
+libraries/ = SubResource("AnimationLibrary_fdp2d")
+autoplay = &"intro"
+
+[connection signal="pressed" from="PersonalSettings/widetile" to="." method="_on_personal_info_pressed"]
+[connection signal="pressed" from="PersonalSettings/widetile4" to="." method="_on_preferred_store_pressed"]
+[connection signal="pressed" from="ConsoleSettings/Tile" to="." method="_on_Networktile_pressed"]
+[connection signal="pressed" from="StoreApps/Native" to="." method="_on_nativeStore_pressed"]
+[connection signal="pressed" from="StoreApps/Steam" to="." method="_on_steamStore_pressed"]
+[connection signal="pressed" from="StoreApps/Epic" to="." method="_on_epicStore_pressed"]

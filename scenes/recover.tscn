@@ -1,0 +1,182 @@
+[gd_scene format=3 uid="uid://coovgak5u0wv2"]
+
+[ext_resource type="Script" uid="uid://brv1jbs5qoxrb" path="res://Scripts/Accounts/accountrecoverylogic.gd" id="1_k4p3d"]
+[ext_resource type="Theme" uid="uid://cf5m0mfatfs7j" path="res://Colors/ButtonRegular.tres" id="2_davj5"]
+[ext_resource type="AudioStream" uid="uid://gpmfdvgmv0mn" path="res://Audio/Back.wav" id="3_o5kjk"]
+[ext_resource type="AudioStream" uid="uid://3l4yrckcb8pg" path="res://Audio/Select.wav" id="4_c2exs"]
+[ext_resource type="FontFile" uid="uid://cd5chefnfx6tn" path="res://Fonts/segoeuisl.ttf" id="5_oshe4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iqw13"]
+bg_color = Color(0.15294118, 0.15294118, 0.15294118, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w7sa3"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_udpjb"]
+bg_color = Color(1, 1, 1, 1)
+draw_center = false
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kd3rj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lw4a6"]
+draw_center = false
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[node name="Recover" type="Control" unique_id=1267678897]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k4p3d")
+
+[node name="BG" type="Panel" parent="." unique_id=127747014]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_iqw13")
+
+[node name="Label" type="Label" parent="BG" unique_id=1806890306]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 56.0
+offset_right = 814.0
+offset_bottom = 212.0
+theme = ExtResource("2_davj5")
+theme_override_font_sizes/font_size = 106
+text = "Sign in!"
+
+[node name="Gamerinput" type="LineEdit" parent="." unique_id=681057524]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.42395833
+anchor_top = 0.0787037
+anchor_right = 0.8197917
+anchor_bottom = 0.1712963
+theme = ExtResource("2_davj5")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.54896206, 0.548963, 0.5489622, 0.6)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_w7sa3")
+theme_override_styles/focus = SubResource("StyleBoxFlat_udpjb")
+placeholder_text = "Gamertag"
+metadata/_edit_use_anchors_ = true
+
+[node name="Back" type="AudioStreamPlayer" parent="." unique_id=1884777372]
+stream = ExtResource("3_o5kjk")
+
+[node name="Select" type="AudioStreamPlayer" parent="." unique_id=269601781]
+stream = ExtResource("4_c2exs")
+
+[node name="Gamerpic" type="TextureRect" parent="." unique_id=792095293]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.91
+anchor_top = 0.143
+anchor_right = 0.91
+anchor_bottom = 0.143
+offset_left = -127.20007
+offset_top = -128.44
+offset_right = 128.79993
+offset_bottom = 127.56
+expand_mode = 1
+
+[node name="PickIconButton" type="Button" parent="." unique_id=1897961836]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.91
+anchor_top = 0.143
+anchor_right = 0.91
+anchor_bottom = 0.143
+offset_left = -127.20007
+offset_top = -128.44
+offset_right = 128.79993
+offset_bottom = 127.56
+focus_neighbor_left = NodePath("../NameInput")
+focus_neighbor_bottom = NodePath("../CreateButton")
+theme = ExtResource("2_davj5")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_kd3rj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lw4a6")
+disabled = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="GamerScoreLabel" type="Label" parent="." unique_id=581947162]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.42400002
+anchor_top = 0.19700001
+anchor_right = 0.42400002
+anchor_bottom = 0.19700001
+offset_left = -0.080078125
+offset_top = -0.76000977
+offset_right = 500.91992
+offset_bottom = 55.23999
+vertical_alignment = 1
+
+[node name="CreateAccount" type="Button" parent="." unique_id=1438041436]
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -625.0
+offset_top = -95.0
+offset_right = -49.0
+offset_bottom = -39.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("2_davj5")
+theme_override_font_sizes/font_size = 50
+text = "Yes, i Am"
+
+[node name="RecoveryGuide" type="Label" parent="." unique_id=583264614]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.915
+anchor_top = 0.287
+anchor_right = 0.915
+anchor_bottom = 0.287
+offset_left = -182.80005
+offset_top = -27.959991
+offset_right = 184.19995
+offset_bottom = 28.040009
+theme = ExtResource("2_davj5")
+theme_override_font_sizes/font_size = 30
+text = "Add your Gamerpic"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Subtitle" type="Label" parent="." unique_id=1777732065]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.039
+anchor_top = 0.21000001
+anchor_right = 0.039
+anchor_bottom = 0.21000001
+offset_left = 0.11999512
+offset_top = -14.800003
+offset_right = 551.12
+offset_bottom = 20.199997
+theme_override_fonts/font = ExtResource("5_oshe4")
+theme_override_font_sizes/font_size = 25
+text = "if You have an Xbox®️ account	, Input Your Gamertag."
+vertical_alignment = 1
+
+[connection signal="text_submitted" from="Gamerinput" to="." method="_on_GamerTag_Recieved_LineEdit"]
+[connection signal="pressed" from="CreateAccount" to="." method="_on_create_account_pressed"]

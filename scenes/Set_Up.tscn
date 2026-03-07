@@ -1,0 +1,1104 @@
+[gd_scene format=3 uid="uid://w7a8sqtkknun"]
+
+[ext_resource type="Script" uid="uid://bwtsratmcoe7p" path="res://Scripts/Setup.gd" id="1_li8p4"]
+[ext_resource type="AudioStream" uid="uid://gpmfdvgmv0mn" path="res://Audio/Back.wav" id="2_0hork"]
+[ext_resource type="AudioStream" uid="uid://3l4yrckcb8pg" path="res://Audio/Select.wav" id="3_c7fm1"]
+[ext_resource type="AudioStream" uid="uid://buhpdfsmdm5dq" path="res://Audio/XboxOneFocus.wav" id="4_x17yl"]
+[ext_resource type="Texture2D" uid="uid://dbsigs7dtmn4j" path="res://InputGlyphs/GenericControllerSet-Up.png" id="5_8rswe"]
+[ext_resource type="Texture2D" uid="uid://bqt1nd1ha1d0d" path="res://InputGlyphs/XboxA.png" id="6_5rcsq"]
+[ext_resource type="FontFile" uid="uid://tgr81pjagifs" path="res://Fonts/segoeuil.ttf" id="7_xg6sc"]
+[ext_resource type="Texture2D" uid="uid://r6vewgcl6k8h" path="res://InputGlyphs/KeyboardSet-up.png" id="8_i2t4j"]
+[ext_resource type="Texture2D" uid="uid://w2ureak6vany" path="res://Assets/PCSet-up.png" id="9_kn0so"]
+[ext_resource type="FontFile" uid="uid://cd5chefnfx6tn" path="res://Fonts/segoeuisl.ttf" id="10_881v5"]
+[ext_resource type="Texture2D" uid="uid://dlnvep7xtk413" path="res://InputGlyphs/KeyboardEnter.png" id="11_cismr"]
+[ext_resource type="FontFile" uid="uid://dpb8ygrlahuh" path="res://Fonts/SegoeXbox.ttf" id="12_yjr2o"]
+[ext_resource type="Texture2D" uid="uid://cm1vnp1c8f3w8" path="res://InputGlyphs/KeyboardEscape.png" id="13_ki7jn"]
+[ext_resource type="Texture2D" uid="uid://p0xcjr6mu4cj" path="res://Assets/WifiCheck.svg" id="14_wd64e"]
+[ext_resource type="Texture2D" uid="uid://c16icoyi4lgb3" path="res://Assets/LoadingSpinner.svg" id="15_nlpgv"]
+[ext_resource type="Texture2D" uid="uid://cv3cyvbbbnnj0" path="res://Assets/LoginSetup.png" id="16_8bhkr"]
+
+[sub_resource type="Animation" id="Animation_xymnw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Section0/Controller:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2266.7925, 1408)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Section0/Controller:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-196, -215)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Section0/Controller/InputGlyphA:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(82, 82)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Section0/Controller/InputGlyphA:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1313.5319, 594.721)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Section0/Controller/Hint:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Section0/Keyboard:size")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1508.5118, 937)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Section0/Keyboard:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(195, 99)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Section0/Keyboard/Hint:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Section3/Device/Loading:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_nd8i4"]
+resource_name = "Section0HintFade-In"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Section0/Controller/Hint:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Section0/Keyboard/Hint:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_5hu1b"]
+resource_name = "StartSection0"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Section0/Controller:size")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2266.7925, 1408), Vector2(4111.7813, 2554)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Section0/Controller:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-196, -215), Vector2(-1459, -609)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Section0/Controller/InputGlyphA:size")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(82, 82), Vector2(185.46826, 185.46814)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Section0/Controller/InputGlyphA:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1313.5319, 594.721), Vector2(2363, 1064)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Section0/Keyboard:size")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1508.5118, 937), Vector2(2437.446, 1514)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Section0/Keyboard:position")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(195, 99), Vector2(-733.9342, -146)]
+}
+
+[sub_resource type="Animation" id="Animation_h7urf"]
+resource_name = "updatecheck"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Section3/Device/Loading:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.2831855]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nd8i4"]
+_data = {
+&"RESET": SubResource("Animation_xymnw"),
+&"Section0HintFade-In": SubResource("Animation_nd8i4"),
+&"StartSection0": SubResource("Animation_5hu1b"),
+&"updatecheck": SubResource("Animation_h7urf")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nd8i4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dnabt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dcm3a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h7urf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_er5gx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j20qh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h7urf"]
+bg_color = Color(0.42745098, 0.42745098, 0.42745098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_er5gx"]
+bg_color = Color(0.32156864, 0.654902, 0.2627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nd8i4"]
+bg_color = Color(0.32156864, 0.654902, 0.2627451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dnabt"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dcm3a"]
+bg_color = Color(0.42745098, 0.42745098, 0.42745098, 1)
+
+[node name="Set-Up" type="Control" unique_id=1476954487]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_li8p4")
+metadata/_edit_vertical_guides_ = [-8766.0, -7011.0]
+metadata/_edit_horizontal_guides_ = [-4570.0]
+
+[node name="HTTPRequest" type="HTTPRequest" parent="." unique_id=233516631]
+use_threads = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=307094197]
+libraries/ = SubResource("AnimationLibrary_nd8i4")
+
+[node name="Back" type="AudioStreamPlayer" parent="." unique_id=1942111896]
+stream = ExtResource("2_0hork")
+
+[node name="Select" type="AudioStreamPlayer" parent="." unique_id=204826002]
+stream = ExtResource("3_c7fm1")
+
+[node name="Focus" type="AudioStreamPlayer" parent="." unique_id=134753924]
+stream = ExtResource("4_x17yl")
+
+[node name="BG" type="ColorRect" parent="." unique_id=1449179935]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.09019608, 0.09019608, 0.09019608, 1)
+
+[node name="Section0" type="Control" parent="." unique_id=374678982]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Controller" type="TextureRect" parent="Section0" unique_id=433228541]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1156.0
+offset_top = -755.0
+offset_right = 1110.7925
+offset_bottom = 653.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_8rswe")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="InputGlyphA" type="TextureRect" parent="Section0/Controller" unique_id=412488627]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.59800005
+anchor_top = 0.45100003
+anchor_right = 0.59800005
+anchor_bottom = 0.45100003
+offset_left = -42.01013
+offset_top = -40.28705
+offset_right = 39.98987
+offset_bottom = 41.71295
+grow_vertical = 0
+texture = ExtResource("6_5rcsq")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Hint" type="Label" parent="Section0/Controller" unique_id=463678692]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75100005
+anchor_top = 0.45600003
+anchor_right = 0.75100005
+anchor_bottom = 0.45600003
+offset_left = -285.948
+offset_top = -76.62402
+offset_right = 286.052
+offset_bottom = 78.37598
+theme_override_fonts/font = ExtResource("7_xg6sc")
+theme_override_font_sizes/font_size = 124
+text = "Press A"
+
+[node name="Keyboard" type="TextureRect" parent="Section0" unique_id=222398422]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -765.0
+offset_top = -441.0
+offset_right = 743.51184
+offset_bottom = 496.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_i2t4j")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Hint" type="Label" parent="Section0/Keyboard" unique_id=1657266197]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.91700006
+anchor_top = 0.46400002
+anchor_right = 0.91700006
+anchor_bottom = 0.46400002
+offset_left = -287.20398
+offset_top = -77.49603
+offset_right = 284.79614
+offset_bottom = 77.50397
+theme_override_fonts/font = ExtResource("7_xg6sc")
+theme_override_font_sizes/font_size = 124
+text = "Press Enter"
+
+[node name="Section1" type="Control" parent="." unique_id=852043415]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Device" type="TextureRect" parent="Section1" unique_id=2129894981]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.526
+anchor_right = 1.0
+anchor_bottom = 0.526
+offset_left = -787.0
+offset_top = -336.08002
+offset_right = -40.566284
+offset_bottom = 333.91998
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("9_kn0so")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Title" type="Label" parent="Section1" unique_id=982093353]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.158
+anchor_top = 0.22900002
+anchor_right = 0.158
+anchor_bottom = 0.22900002
+offset_left = -108.360016
+offset_top = -15.320023
+offset_right = 107.292145
+offset_bottom = 108.67998
+theme_override_fonts/font = ExtResource("10_881v5")
+theme_override_font_sizes/font_size = 91
+text = "Hi"
+
+[node name="InputGlyphA" type="TextureRect" parent="Section1" unique_id=736488762]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.123
+anchor_top = 0.88600004
+anchor_right = 0.123
+anchor_bottom = 0.88600004
+offset_left = -41.160004
+offset_top = -40.880066
+offset_right = 40.839996
+offset_bottom = 41.119934
+grow_vertical = 0
+texture = ExtResource("11_cismr")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Hint" type="Label" parent="Section1/InputGlyphA" unique_id=280147718]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.9510001
+anchor_top = 0.5
+anchor_right = 1.9510001
+anchor_bottom = 0.5
+offset_left = -77.98201
+offset_top = -41.0
+offset_right = 78.01799
+offset_bottom = 36.0
+theme_override_fonts/font = ExtResource("12_yjr2o")
+theme_override_font_sizes/font_size = 27
+text = "Select"
+vertical_alignment = 1
+
+[node name="LanguageSelector" type="VBoxContainer" parent="Section1" unique_id=579656946]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.17300001
+anchor_top = 0.56100005
+anchor_right = 0.17300001
+anchor_bottom = 0.56100005
+offset_left = -137.16
+offset_top = -249.88007
+offset_right = 138.84
+offset_bottom = 343.11993
+
+[node name="Eng" type="Button" parent="Section1/LanguageSelector" unique_id=1706560914]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../Arabic")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nd8i4")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dnabt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dcm3a")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h7urf")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_er5gx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j20qh")
+text = "English"
+alignment = 0
+
+[node name="FocusMarker" type="Label" parent="Section1/LanguageSelector/Eng" unique_id=782283645]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.32200003
+anchor_top = 0.5
+anchor_right = 0.32200003
+anchor_bottom = 0.5
+offset_left = -19.87201
+offset_top = -31.5
+offset_right = 20.12799
+offset_bottom = 29.5
+theme_override_colors/font_color = Color(0.32156864, 0.654902, 0.2627451, 1)
+theme_override_font_sizes/font_size = 44
+text = ">"
+
+[node name="Arabic" type="Button" parent="Section1/LanguageSelector" unique_id=883105020]
+layout_mode = 2
+focus_neighbor_top = NodePath("../Eng")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nd8i4")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dnabt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dcm3a")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h7urf")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_er5gx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j20qh")
+text = "Arabic - العربية"
+alignment = 0
+
+[node name="FocusMarker" type="Label" parent="Section1/LanguageSelector/Arabic" unique_id=1650840671]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.286
+anchor_top = 0.5
+anchor_right = 0.286
+anchor_bottom = 0.5
+offset_left = -19.936005
+offset_top = -31.5
+offset_right = 20.063995
+offset_bottom = 29.5
+theme_override_colors/font_color = Color(0.32156864, 0.654902, 0.2627451, 1)
+theme_override_font_sizes/font_size = 44
+text = ">"
+
+[node name="TODO" type="Button" parent="Section1/LanguageSelector" unique_id=1404490457]
+layout_mode = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nd8i4")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dnabt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dcm3a")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h7urf")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_er5gx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j20qh")
+disabled = true
+text = "TODO: More Languages..."
+alignment = 0
+
+[node name="Section2" type="Control" parent="." unique_id=534417273]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Device" type="TextureRect" parent="Section2" unique_id=394533378]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.526
+anchor_right = 1.0
+anchor_bottom = 0.526
+offset_left = -787.0
+offset_top = -336.08002
+offset_right = -40.566284
+offset_bottom = 333.91998
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("9_kn0so")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Section2/Device" unique_id=1070377405]
+visible = false
+
+[node name="Checkmark" type="Label" parent="Section2/Device/CanvasLayer" unique_id=873679123]
+anchors_preset = -1
+anchor_left = 0.94900006
+anchor_top = 0.47300002
+anchor_right = 0.94900006
+anchor_bottom = 0.47300002
+offset_left = -199.08008
+offset_top = -244.84003
+offset_right = 199.91992
+offset_bottom = 243.935
+theme_override_fonts/font = ExtResource("12_yjr2o")
+theme_override_font_sizes/font_size = 80
+text = "✔️"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Greenifier" type="CanvasModulate" parent="Section2/Device/CanvasLayer" unique_id=1040290236]
+color = Color(1, 0, 0, 1)
+
+[node name="Title" type="Label" parent="Section2" unique_id=1075310881]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.28
+anchor_top = 0.272
+anchor_right = 0.28
+anchor_bottom = 0.272
+offset_left = -342.59998
+offset_top = -61.76001
+offset_right = -126.947815
+offset_bottom = 62.23999
+theme_override_fonts/font = ExtResource("10_881v5")
+theme_override_font_sizes/font_size = 91
+text = "You're connected"
+
+[node name="Subtitle" type="Label" parent="Section2" unique_id=80966486]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.19700001
+anchor_top = 0.326
+anchor_right = 0.19700001
+anchor_bottom = 0.326
+offset_left = -183.24002
+offset_top = -16.080017
+offset_right = 183.75998
+offset_bottom = 15.919983
+theme_override_fonts/font = ExtResource("7_xg6sc")
+theme_override_font_sizes/font_size = 26
+text = "Now We'll Check for Any Updates"
+
+[node name="InputGlyphA" type="TextureRect" parent="Section2" unique_id=2145067399]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.123
+anchor_top = 0.88600004
+anchor_right = 0.123
+anchor_bottom = 0.88600004
+offset_left = -41.160004
+offset_top = -40.880066
+offset_right = 40.839996
+offset_bottom = 41.119934
+grow_vertical = 0
+texture = ExtResource("11_cismr")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Hint" type="Label" parent="Section2/InputGlyphA" unique_id=1886900749]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.9510001
+anchor_top = 0.5
+anchor_right = 1.9510001
+anchor_bottom = 0.5
+offset_left = -77.98201
+offset_top = -41.0
+offset_right = 78.01799
+offset_bottom = 36.0
+theme_override_fonts/font = ExtResource("12_yjr2o")
+theme_override_font_sizes/font_size = 27
+text = "Select"
+vertical_alignment = 1
+
+[node name="InputGlyphB" type="TextureRect" parent="Section2" unique_id=485381762]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.22200002
+anchor_top = 0.88600004
+anchor_right = 0.22200002
+anchor_bottom = 0.88600004
+offset_left = -41.24002
+offset_top = -40.880066
+offset_right = 40.75998
+offset_bottom = 41.119934
+grow_vertical = 0
+texture = ExtResource("13_ki7jn")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Hint" type="Label" parent="Section2/InputGlyphB" unique_id=1251018141]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.9510001
+anchor_top = 0.5
+anchor_right = 1.9510001
+anchor_bottom = 0.5
+offset_left = -77.98201
+offset_top = -41.0
+offset_right = 78.01799
+offset_bottom = 36.0
+theme_override_fonts/font = ExtResource("12_yjr2o")
+theme_override_font_sizes/font_size = 27
+text = "Back"
+vertical_alignment = 1
+
+[node name="Options" type="VBoxContainer" parent="Section2" unique_id=955553937]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.17300001
+anchor_top = 0.712
+anchor_right = 0.17300001
+anchor_bottom = 0.712
+offset_left = -137.16
+offset_top = -33.960022
+offset_right = 138.84
+offset_bottom = 34.039978
+
+[node name="update" type="Button" parent="Section2/Options" unique_id=1063658182]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../skip")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nd8i4")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dnabt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dcm3a")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h7urf")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_er5gx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j20qh")
+text = "Check For Updates"
+alignment = 0
+
+[node name="FocusMarker" type="Label" parent="Section2/Options/update" unique_id=909894191]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.21000001
+anchor_top = 0.5
+anchor_right = 0.21000001
+anchor_bottom = 0.5
+offset_left = -19.960003
+offset_top = -31.5
+offset_right = 20.039997
+offset_bottom = 29.5
+theme_override_colors/font_color = Color(0.32156864, 0.654902, 0.2627451, 1)
+theme_override_font_sizes/font_size = 44
+text = ">"
+
+[node name="skip" type="Button" parent="Section2/Options" unique_id=312646786]
+layout_mode = 2
+focus_neighbor_top = NodePath("../update")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nd8i4")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dnabt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dcm3a")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h7urf")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_er5gx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j20qh")
+text = "Skip Update"
+alignment = 0
+
+[node name="FocusMarker" type="Label" parent="Section2/Options/skip" unique_id=76956062]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.286
+anchor_top = 0.5
+anchor_right = 0.286
+anchor_bottom = 0.5
+offset_left = -19.936005
+offset_top = -31.5
+offset_right = 20.063995
+offset_bottom = 29.5
+theme_override_colors/font_color = Color(0.32156864, 0.654902, 0.2627451, 1)
+theme_override_font_sizes/font_size = 44
+text = ">"
+
+[node name="Section3" type="Control" parent="." unique_id=175520519]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Section3" unique_id=401015718]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.38300002
+anchor_top = 0.272
+anchor_right = 0.38300002
+anchor_bottom = 0.272
+offset_left = -540.36005
+offset_top = -61.76001
+offset_right = 541.63995
+offset_bottom = 62.23999
+theme_override_fonts/font = ExtResource("10_881v5")
+theme_override_font_sizes/font_size = 91
+text = "We're checking for Updates"
+
+[node name="Device" type="TextureRect" parent="Section3" unique_id=1672561337]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.507
+anchor_top = 0.52500004
+anchor_right = 0.507
+anchor_bottom = 0.52500004
+offset_left = -221.44006
+offset_top = -199.00006
+offset_right = 220.84985
+offset_bottom = 197.99994
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_kn0so")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Wifi" type="TextureRect" parent="Section3/Device" unique_id=652326099]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.95400006
+anchor_top = 0.060000002
+anchor_right = 0.95400006
+anchor_bottom = 0.060000002
+offset_left = -55.94461
+offset_top = -55.82
+offset_right = 56.05539
+offset_bottom = 56.18
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_wd64e")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Loading" type="TextureRect" parent="Section3/Device" unique_id=442356007]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.509
+anchor_top = 0.47100002
+anchor_right = 0.509
+anchor_bottom = 0.47100002
+offset_left = -36.125565
+offset_top = -35.987
+offset_right = 35.874435
+offset_bottom = 36.013
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(36, 36)
+texture = ExtResource("15_nlpgv")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Subtitle" type="Label" parent="Section3" unique_id=518046838]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.19700001
+anchor_top = 0.367
+anchor_right = 0.19700001
+anchor_bottom = 0.367
+offset_left = -183.24002
+offset_top = -16.360016
+offset_right = 183.75998
+offset_bottom = 15.639984
+theme_override_fonts/font = ExtResource("7_xg6sc")
+theme_override_font_sizes/font_size = 26
+
+[node name="DownloadMode" type="Control" parent="Section3" unique_id=1050335679]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="Section3/DownloadMode" unique_id=1984307038]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.49500003
+anchor_top = 0.76500005
+anchor_right = 0.49500003
+anchor_bottom = 0.76500005
+offset_left = -755.4001
+offset_top = -4.2000732
+offset_right = 753.5999
+offset_bottom = 3.7999268
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_h7urf")
+theme_override_styles/fill = SubResource("StyleBoxFlat_er5gx")
+show_percentage = false
+
+[node name="Progress" type="Label" parent="Section3/DownloadMode" unique_id=1399960712]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.13100001
+anchor_top = 0.708
+anchor_right = 0.13100001
+anchor_bottom = 0.708
+offset_left = -56.52002
+offset_top = -49.640015
+offset_right = 56.47998
+offset_bottom = 49.359985
+theme_override_fonts/font = ExtResource("7_xg6sc")
+theme_override_font_sizes/font_size = 70
+text = "%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Remaining" type="Label" parent="Section3/DownloadMode" unique_id=886362005]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.85200006
+anchor_top = 0.75000006
+anchor_right = 0.85200006
+anchor_bottom = 0.75000006
+offset_left = -68.84009
+offset_top = -13.000061
+offset_right = 68.15991
+offset_bottom = 11.999939
+theme_override_fonts/font = ExtResource("10_881v5")
+text = " MB remaining"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Options" type="VBoxContainer" parent="Section3" unique_id=1488937226]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.17300001
+anchor_top = 0.712
+anchor_right = 0.17300001
+anchor_bottom = 0.712
+offset_left = -137.16
+offset_top = -33.960022
+offset_right = 138.84
+offset_bottom = 34.039978
+
+[node name="updatenow" type="Button" parent="Section3/Options" unique_id=48350077]
+visible = false
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../skip")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nd8i4")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dnabt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dcm3a")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h7urf")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_er5gx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j20qh")
+text = "Update Now"
+alignment = 0
+
+[node name="FocusMarker" type="Label" parent="Section3/Options/updatenow" unique_id=823717472]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.21000001
+anchor_top = 0.5
+anchor_right = 0.21000001
+anchor_bottom = 0.5
+offset_left = -19.960003
+offset_top = -31.5
+offset_right = 20.039997
+offset_bottom = 29.5
+theme_override_colors/font_color = Color(0.32156864, 0.654902, 0.2627451, 1)
+theme_override_font_sizes/font_size = 44
+text = ">"
+
+[node name="skip" type="Button" parent="Section3/Options" unique_id=535953987]
+layout_mode = 2
+focus_neighbor_top = NodePath("../updatenow")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nd8i4")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dnabt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dcm3a")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h7urf")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_er5gx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j20qh")
+text = "Skip Update"
+alignment = 0
+
+[node name="FocusMarker" type="Label" parent="Section3/Options/skip" unique_id=1163892982]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.286
+anchor_top = 0.5
+anchor_right = 0.286
+anchor_bottom = 0.5
+offset_left = -19.936005
+offset_top = -31.5
+offset_right = 20.063995
+offset_bottom = 29.5
+theme_override_colors/font_color = Color(0.32156864, 0.654902, 0.2627451, 1)
+theme_override_font_sizes/font_size = 44
+text = ">"
+
+[node name="Updater" type="HTTPRequest" parent="Section3" unique_id=776048022]
+use_threads = true
+
+[node name="Section4" type="Control" parent="." unique_id=1205339317]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TV" type="TextureRect" parent="Section4" unique_id=1900575165]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.74100006
+anchor_top = 0.5
+anchor_right = 0.74100006
+anchor_bottom = 0.5
+offset_left = -481.7201
+offset_top = -441.0
+offset_right = 543.2799
+offset_bottom = 567.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("16_8bhkr")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Title" type="Label" parent="Section4" unique_id=750566622]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.23900001
+anchor_top = 0.289
+anchor_right = 0.23900001
+anchor_bottom = 0.289
+offset_left = -263.88
+offset_top = -80.119995
+offset_right = 263.12
+offset_bottom = 80.880005
+theme_override_fonts/font = ExtResource("10_881v5")
+theme_override_font_sizes/font_size = 65
+text = "Next, you'll Create 
+an Account"
+
+[node name="setup-progress" type="TabBar" parent="." unique_id=999449560]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.32000002
+anchor_top = 0.15
+anchor_right = 0.32000002
+anchor_bottom = 0.15
+offset_left = -419.40002
+offset_top = -6.0
+offset_right = 420.59998
+offset_bottom = 5.0
+focus_mode = 0
+theme_override_constants/h_separation = 8
+theme_override_constants/tab_separation = 8
+theme_override_font_sizes/font_size = 1
+theme_override_styles/tab_unselected = SubResource("StyleBoxFlat_nd8i4")
+theme_override_styles/tab_selected = SubResource("StyleBoxFlat_dnabt")
+theme_override_styles/tab_disabled = SubResource("StyleBoxFlat_dcm3a")
+current_tab = 0
+clip_tabs = false
+close_with_middle_mouse = false
+scrolling_enabled = false
+switch_on_drag_hover = false
+scroll_to_selected = false
+tab_count = 4
+tab_0/title = "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "
+tab_1/title = "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "
+tab_1/disabled = true
+tab_2/title = "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "
+tab_2/disabled = true
+tab_3/title = "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "
+tab_3/disabled = true
+
+[node name="CurrentSec" type="Label" parent="setup-progress" unique_id=1587480510]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.113000005
+anchor_top = 2.864
+anchor_right = 0.113000005
+anchor_bottom = 2.864
+offset_left = -94.920006
+offset_top = -11.504002
+offset_right = 95.079994
+offset_bottom = 11.495998
+theme_override_colors/font_color = Color(0.48235294, 0.48235294, 0.49019608, 1)
+theme_override_fonts/font = ExtResource("7_xg6sc")
+text = "Language"
+vertical_alignment = 1
+
+[connection signal="request_completed" from="HTTPRequest" to="." method="wifi_check_complete"]
+[connection signal="focus_entered" from="Section1/LanguageSelector/Eng" to="." method="_on_engLang_focus_entered"]
+[connection signal="focus_exited" from="Section1/LanguageSelector/Eng" to="." method="_on_engLang_focus_exited"]
+[connection signal="pressed" from="Section1/LanguageSelector/Eng" to="." method="_on_engLang_pressed"]
+[connection signal="focus_entered" from="Section1/LanguageSelector/Arabic" to="." method="_on_arabicLang_focus_entered"]
+[connection signal="focus_exited" from="Section1/LanguageSelector/Arabic" to="." method="_on_arabicLang_focus_exited"]
+[connection signal="pressed" from="Section1/LanguageSelector/Arabic" to="." method="_on_arabicLang_pressed"]
+[connection signal="focus_entered" from="Section2/Options/update" to="." method="_on_update_focus_entered"]
+[connection signal="focus_exited" from="Section2/Options/update" to="." method="_on_update_focus_exited"]
+[connection signal="pressed" from="Section2/Options/update" to="." method="_on_update_pressed"]
+[connection signal="focus_entered" from="Section2/Options/skip" to="." method="_on_skipupdates_focus_entered"]
+[connection signal="focus_exited" from="Section2/Options/skip" to="." method="_on_skipupdates_focus_exited"]
+[connection signal="focus_entered" from="Section3/Options/updatenow" to="." method="_on_updatenow_focus_entered"]
+[connection signal="focus_exited" from="Section3/Options/updatenow" to="." method="_on_updatenow_focus_exited"]
+[connection signal="pressed" from="Section3/Options/updatenow" to="." method="_on_updatenow_pressed"]
+[connection signal="focus_entered" from="Section3/Options/skip" to="." method="_on_skip_focus_entered"]
+[connection signal="focus_exited" from="Section3/Options/skip" to="." method="_on_skip_focus_exited"]
