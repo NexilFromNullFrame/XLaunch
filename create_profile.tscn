@@ -1,0 +1,177 @@
+[gd_scene format=3 uid="uid://btc7u2d1p1m8f"]
+
+[ext_resource type="Script" uid="uid://dn1xi1tcpepyp" path="res://Scripts/CreateProfile.gd" id="1_5xmls"]
+[ext_resource type="Theme" uid="uid://cf5m0mfatfs7j" path="res://ButtonRegular.tres" id="2_r0qu1"]
+[ext_resource type="AudioStream" uid="uid://buhpdfsmdm5dq" path="res://Audio/XboxOneFocus.wav" id="3_6o5rp"]
+[ext_resource type="AudioStream" uid="uid://gpmfdvgmv0mn" path="res://Audio/Back.wav" id="4_sfpn6"]
+[ext_resource type="AudioStream" uid="uid://3l4yrckcb8pg" path="res://Audio/Select.wav" id="5_gt3pp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sfpn6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gt3pp"]
+draw_center = false
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[node name="CreateProfile" type="Control" unique_id=874178017]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5xmls")
+
+[node name="BG" type="ColorRect" parent="." unique_id=1824014412]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Title" type="Label" parent="." unique_id=1997890216]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 56.0
+offset_right = 162.0
+offset_bottom = 79.0
+theme = ExtResource("2_r0qu1")
+theme_override_font_sizes/font_size = 101
+text = "New Here?"
+
+[node name="NameInput" type="LineEdit" parent="." unique_id=368953579]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.041
+anchor_top = 0.367
+anchor_right = 0.041
+anchor_bottom = 0.367
+offset_left = -0.7200012
+offset_top = -34.360016
+offset_right = 765.28
+offset_bottom = 31.639984
+focus_neighbor_right = NodePath("../PickIconButton")
+focus_neighbor_bottom = NodePath("../GSSpin")
+theme = ExtResource("2_r0qu1")
+theme_override_font_sizes/font_size = 40
+placeholder_text = "Choose a Cool Gamertag!"
+max_length = 41
+context_menu_enabled = false
+emoji_menu_enabled = false
+caret_blink = true
+
+[node name="Label" type="Label" parent="." unique_id=1406370842]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.041
+anchor_top = 0.256
+anchor_right = 0.041
+anchor_bottom = 0.256
+offset_left = -0.7200012
+offset_top = -20.480011
+offset_right = 157.28
+offset_bottom = 2.519989
+theme = ExtResource("2_r0qu1")
+theme_override_font_sizes/font_size = 50
+text = "Set a New Gamertag"
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=1388701962]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.823
+anchor_top = 0.47300002
+anchor_right = 0.823
+anchor_bottom = 0.47300002
+offset_left = -217.16003
+offset_top = 0.15997314
+offset_right = 217.83997
+offset_bottom = 67.15997
+theme = ExtResource("2_r0qu1")
+theme_override_font_sizes/font_size = 50
+text = "Your Gamerpic"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=1016381655]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.041
+anchor_top = 0.44200003
+anchor_right = 0.041
+anchor_bottom = 0.44200003
+offset_left = -0.7200012
+offset_top = -33.360046
+offset_right = 434.28
+offset_bottom = 33.639954
+theme = ExtResource("2_r0qu1")
+theme_override_font_sizes/font_size = 50
+text = "Set your Prefered Gamerscore Amount"
+vertical_alignment = 1
+
+[node name="GSSpin" type="SpinBox" parent="." unique_id=1955736873]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.041
+anchor_top = 0.508
+anchor_right = 0.041
+anchor_bottom = 0.508
+offset_left = -0.7200012
+offset_top = -28.640015
+offset_right = 344.05777
+offset_bottom = 29.359985
+focus_neighbor_top = NodePath("../NameInput")
+focus_neighbor_right = NodePath("../PickIconButton")
+theme = ExtResource("2_r0qu1")
+max_value = 9.223372e+18
+allow_greater = true
+alignment = 1
+suffix = "G"
+
+[node name="CreateButton" type="Button" parent="." unique_id=192185020]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -523.0
+offset_top = -97.0
+offset_right = -11.0
+offset_bottom = -9.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("2_r0qu1")
+theme_override_font_sizes/font_size = 71
+text = "Create!"
+
+[node name="PickIconButton" type="Button" parent="." unique_id=479630996]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.82100004
+anchor_top = 0.33200002
+anchor_right = 0.82100004
+anchor_bottom = 0.33200002
+offset_left = -168.32007
+offset_top = -167.56003
+offset_right = 167.67993
+offset_bottom = 168.43997
+focus_neighbor_left = NodePath("../NameInput")
+focus_neighbor_bottom = NodePath("../CreateButton")
+theme = ExtResource("2_r0qu1")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sfpn6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gt3pp")
+expand_icon = true
+
+[node name="Focus" type="AudioStreamPlayer" parent="." unique_id=292506601]
+stream = ExtResource("3_6o5rp")
+
+[node name="Back" type="AudioStreamPlayer" parent="." unique_id=406573345]
+stream = ExtResource("4_sfpn6")
+
+[node name="Select" type="AudioStreamPlayer" parent="." unique_id=971360218]
+stream = ExtResource("5_gt3pp")
