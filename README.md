@@ -39,9 +39,10 @@
     - Game/App icon (.png or .jpeg only)
     - Game/App name
     - Game shortcut or executable path (optional for shell games which have no function)
-- You can make a game shortcut on the "My games & apps" app on the dashboard after creating an account.
+- You can make a game shortcut on the "My games & apps" app on the dashboard after creating an account.\
+- Currently The Only Metro-Themed Launcher Out There
 
-> [!NOTE]  
+> [!IMPORTANT]  
 > This launcher is very rough and may lack polish (minimal animations and a work-in-progress app set).  
 > This project is published under the MIT License; you are free to change, contribute, redistribute, and make derivative works per that license.
 
