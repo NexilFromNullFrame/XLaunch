@@ -39,8 +39,11 @@ func _create() -> void:
 
 	$Select.play()
 	AccountManager.add_profile(GTag, GTag, gs, true, [], icon_tex, null)
+	ScreenManager.is_restricted = false
 	await $Select.finished
 	if ScreenManager.last_screen == "log-in":
+		get_tree().change_scene_to_file("res://scenes/log_in.tscn")
+	elif ScreenManager.curr_screen == "Set-Up":
 		get_tree().change_scene_to_file("res://scenes/log_in.tscn")
 
 func _input(event: InputEvent) -> void:
@@ -49,7 +52,7 @@ func _input(event: InputEvent) -> void:
 			var focussfxplaying = $Focus.playing
 			if focussfxplaying == false:
 				$Focus.play()
-		if event.is_action_pressed("Back"):
+		if event.is_action_pressed("Back") and ScreenManager.is_restricted != true:
 			if ScreenManager.last_screen == "log-in":
 				ScreenManager.last_screen = "CreateAcc"
 				ScreenManager.curr_screen = "log-in"

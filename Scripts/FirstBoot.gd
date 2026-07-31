@@ -24,7 +24,7 @@ func run_first_boot_setup(previous_version: String = "0.0.0") -> void:
 	print("First boot / version upgrade detected (from ", previous_version, " → ", CURRENT_VERSION, ")")
 	
 	# Optional: migrate data from previous_version if needed
-	if previous_version.begins_with("1.0"):
+	if previous_version.begins_with("0.6"):
 		migrate_from_v1_0()
 	
 	# Show setup screen
@@ -35,8 +35,7 @@ func run_first_boot_setup(previous_version: String = "0.0.0") -> void:
 	config.save(config_path)
 
 func migrate_from_v1_0() -> void:
-	# Example: clear old incompatible data
-	print("Migrating from v1.0 → clearing old games list format")
+	print("Migrating from v1.0 -> clearing old games list format")
 	AccountManager.current_profile.installed_games.clear()
 	AccountManager.save_current_profile()
 	

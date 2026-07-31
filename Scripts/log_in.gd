@@ -27,6 +27,10 @@ func _input(event: InputEvent) -> void:
 				$Focus.play()
 
 func _refresh_carousel() -> void:
+	#Adds Scrollbar for Mobile
+	if OS.has_feature("mobile") or OS.has_feature("android"):
+		# Options: SCROLL_MODE_AUTO, SCROLL_MODE_SHOW_ALWAYS, SCROLL_MODE_SHOW_NEVER, SCROLL_MODE_RESERVE
+		$BG/Accounts.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_RESERVE
 	# Add real/custom profiles
 	for i in AccountManager.profiles.size():
 		var profile = AccountManager.profiles[i]

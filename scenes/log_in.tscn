@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://kv32wfvbbou1" path="res://Scripts/log_in.gd" id="1_6m26g"]
 [ext_resource type="Theme" uid="uid://cf5m0mfatfs7j" path="res://Colors/ButtonRegular.tres" id="2_0l4rw"]
+[ext_resource type="Theme" uid="uid://dpn1uxgbvrcpi" path="res://Colors/scrollbar.tres" id="2_4uidh"]
 [ext_resource type="AudioStream" uid="uid://3l4yrckcb8pg" path="res://Audio/Select.wav" id="2_6m26g"]
 [ext_resource type="Texture2D" uid="uid://0m2315h8kwty" path="res://Assets/RecoverFrom.png" id="2_blnih"]
 [ext_resource type="PackedScene" uid="uid://cb2s15aj38icj" path="res://scenes/ProfileTileTemplate.tscn" id="2_u06c8"]
@@ -65,9 +66,11 @@ offset_bottom = 193.0
 grow_horizontal = 2
 grow_vertical = 2
 localize_numeral_system = false
+theme = ExtResource("2_4uidh")
 follow_focus = true
 horizontal_scroll_mode = 3
 vertical_scroll_mode = 3
+scroll_horizontal_by_default = true
 
 [node name="AccountList" type="HBoxContainer" parent="BG/Accounts" unique_id=814760633]
 custom_minimum_size = Vector2(305, 305)
@@ -82,10 +85,12 @@ custom_minimum_size = Vector2(280, 280)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
 icon_alignment = 1
 expand_icon = true
 
-[node name="Gamertag" parent="BG/Accounts/AccountList/Template" index="0"]
+[node name="Gamertag" parent="BG/Accounts/AccountList/Template" index="0" unique_id=73955342]
 anchor_left = 0.512
 anchor_top = 1.036
 anchor_right = 0.512
@@ -99,10 +104,10 @@ theme_override_font_sizes/font_size = 25
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="SmallIconHelper" parent="BG/Accounts/AccountList/Template" index="1"]
+[node name="SmallIconHelper" parent="BG/Accounts/AccountList/Template" index="1" unique_id=1348378252]
 mouse_filter = 2
 
-[node name="SmallGamerIcon" parent="BG/Accounts/AccountList/Template/SmallIconHelper" index="0"]
+[node name="SmallGamerIcon" parent="BG/Accounts/AccountList/Template/SmallIconHelper" index="0" unique_id=1428870963]
 expand_mode = 1
 stretch_mode = 5
 
@@ -111,6 +116,8 @@ custom_minimum_size = Vector2(290, 280)
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
 theme = ExtResource("2_0l4rw")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_u06c8")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_5bc0e")
@@ -134,7 +141,7 @@ grow_horizontal = 2
 grow_vertical = 0
 theme = ExtResource("2_0l4rw")
 theme_override_font_sizes/font_size = 25
-text = "Recover From Xbox Live®️"
+text = "    Recover From Xbox Live®"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -143,6 +150,8 @@ custom_minimum_size = Vector2(280, 280)
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
 theme = ExtResource("2_0l4rw")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_u06c8")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_u06c8")

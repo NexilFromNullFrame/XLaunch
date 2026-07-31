@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bqt1nd1ha1d0d" path="res://InputGlyphs/XboxA.png" id="6_5rcsq"]
 [ext_resource type="FontFile" uid="uid://tgr81pjagifs" path="res://Fonts/segoeuil.ttf" id="7_xg6sc"]
 [ext_resource type="Texture2D" uid="uid://r6vewgcl6k8h" path="res://InputGlyphs/KeyboardSet-up.png" id="8_i2t4j"]
+[ext_resource type="Texture2D" uid="uid://dt0p82ixq5ob5" path="res://Assets/PhoneSetup.png" id="9_0hork"]
 [ext_resource type="Texture2D" uid="uid://w2ureak6vany" path="res://Assets/PCSet-up.png" id="9_kn0so"]
 [ext_resource type="FontFile" uid="uid://cd5chefnfx6tn" path="res://Fonts/segoeuisl.ttf" id="10_881v5"]
 [ext_resource type="Texture2D" uid="uid://dlnvep7xtk413" path="res://InputGlyphs/KeyboardEnter.png" id="11_cismr"]
@@ -16,6 +17,9 @@
 [ext_resource type="Texture2D" uid="uid://p0xcjr6mu4cj" path="res://Assets/WifiCheck.svg" id="14_wd64e"]
 [ext_resource type="Texture2D" uid="uid://c16icoyi4lgb3" path="res://Assets/LoadingSpinner.svg" id="15_nlpgv"]
 [ext_resource type="Texture2D" uid="uid://cv3cyvbbbnnj0" path="res://Assets/LoginSetup.png" id="16_8bhkr"]
+[ext_resource type="StyleBox" uid="uid://cc0uf0k4mw1g7" path="res://Colors/HUDMenuGrey.tres" id="18_8rswe"]
+[ext_resource type="PackedScene" uid="uid://coovgak5u0wv2" path="res://scenes/recover.tscn" id="19_5rcsq"]
+[ext_resource type="PackedScene" uid="uid://btc7u2d1p1m8f" path="res://scenes/create_profile.tscn" id="20_xg6sc"]
 
 [sub_resource type="Animation" id="Animation_xymnw"]
 length = 0.001
@@ -254,6 +258,16 @@ _data = {
 &"updatecheck": SubResource("Animation_h7urf")
 }
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g7b7a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gyc6d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6qx4q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hqkgv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xrv66"]
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nd8i4"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dnabt"]
@@ -408,6 +422,59 @@ theme_override_fonts/font = ExtResource("7_xg6sc")
 theme_override_font_sizes/font_size = 124
 text = "Press Enter"
 
+[node name="Mobile" type="TextureRect" parent="Section0" unique_id=1310133413]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -775.7441
+offset_top = -413.5
+offset_right = 732.7678
+offset_bottom = 523.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_0hork")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Hint" type="Label" parent="Section0/Mobile" unique_id=1730463198]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.91700006
+anchor_top = 0.46400002
+anchor_right = 0.91700006
+anchor_bottom = 0.46400002
+offset_left = -287.20398
+offset_top = -77.49603
+offset_right = 284.79614
+offset_bottom = 77.50397
+theme_override_fonts/font = ExtResource("7_xg6sc")
+theme_override_font_sizes/font_size = 124
+text = "Tap"
+
+[node name="button" type="Button" parent="Section0/Mobile" unique_id=292744745]
+z_index = 2436
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.12100001
+anchor_top = -0.135
+anchor_right = 1.143
+anchor_bottom = 1.0
+offset_left = -0.7259674
+offset_top = -1.0049973
+offset_right = 0.51501465
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_g7b7a")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gyc6d")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6qx4q")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_hqkgv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xrv66")
+
 [node name="Section1" type="Control" parent="." unique_id=852043415]
 visible = false
 layout_mode = 1
@@ -522,6 +589,7 @@ theme_override_font_sizes/font_size = 44
 text = ">"
 
 [node name="Arabic" type="Button" parent="Section1/LanguageSelector" unique_id=883105020]
+visible = false
 layout_mode = 2
 focus_neighbor_top = NodePath("../Eng")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_nd8i4")
@@ -603,7 +671,7 @@ offset_right = 199.91992
 offset_bottom = 243.935
 theme_override_fonts/font = ExtResource("12_yjr2o")
 theme_override_font_sizes/font_size = 80
-text = "✔️"
+text = "✓"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -1021,6 +1089,7 @@ expand_mode = 1
 stretch_mode = 5
 
 [node name="Title" type="Label" parent="Section4" unique_id=750566622]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.23900001
@@ -1035,6 +1104,74 @@ theme_override_fonts/font = ExtResource("10_881v5")
 theme_override_font_sizes/font_size = 65
 text = "Next, you'll Create 
 an Account"
+
+[node name="Options" type="VBoxContainer" parent="Section4" unique_id=1791691029]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.18200001
+anchor_top = 0.624
+anchor_right = 0.18200001
+anchor_bottom = 0.624
+offset_left = -155.44003
+offset_top = -239.92004
+offset_right = 155.55997
+offset_bottom = 240.07996
+
+[node name="Recover" type="Button" parent="Section4/Options" unique_id=528157277]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../Arabic")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nd8i4")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dnabt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dcm3a")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h7urf")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_er5gx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j20qh")
+text = "I have an Account at Xbox Live ®"
+alignment = 0
+
+[node name="FocusMarker" type="Label" parent="Section4/Options/Recover" unique_id=640502170]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.32200003
+anchor_top = 0.5
+anchor_right = 0.32200003
+anchor_bottom = 0.5
+offset_left = -19.87201
+offset_top = -31.5
+offset_right = 20.12799
+offset_bottom = 29.5
+theme_override_colors/font_color = Color(0.32156864, 0.654902, 0.2627451, 1)
+theme_override_font_sizes/font_size = 44
+text = ">"
+
+[node name="Create New" type="Button" parent="Section4/Options" unique_id=1587853519]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../Arabic")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nd8i4")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dnabt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dcm3a")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h7urf")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_er5gx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j20qh")
+text = "I do not have an Account at Xbox Live®"
+alignment = 0
+
+[node name="FocusMarker" type="Label" parent="Section4/Options/Create New" unique_id=211637904]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.32200003
+anchor_top = 0.5
+anchor_right = 0.32200003
+anchor_bottom = 0.5
+offset_left = -19.87201
+offset_top = -31.5
+offset_right = 20.12799
+offset_bottom = 29.5
+theme_override_colors/font_color = Color(0.32156864, 0.654902, 0.2627451, 1)
+theme_override_font_sizes/font_size = 44
+text = ">"
 
 [node name="setup-progress" type="TabBar" parent="." unique_id=999449560]
 layout_mode = 1
@@ -1085,7 +1222,32 @@ theme_override_fonts/font = ExtResource("7_xg6sc")
 text = "Language"
 vertical_alignment = 1
 
+[node name="Guide" type="Panel" parent="." unique_id=903561084]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.0
+offset_top = -451.0
+offset_right = 960.0
+offset_bottom = 457.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("18_8rswe")
+
+[node name="Recover" parent="Guide" unique_id=1267678897 instance=ExtResource("19_5rcsq")]
+visible = false
+layout_mode = 1
+
+[node name="CreateProfile" parent="Guide" unique_id=874178017 instance=ExtResource("20_xg6sc")]
+visible = false
+layout_mode = 1
+
 [connection signal="request_completed" from="HTTPRequest" to="." method="wifi_check_complete"]
+[connection signal="pressed" from="Section0/Mobile/button" to="." method="_on_mobilestart_pressed"]
 [connection signal="focus_entered" from="Section1/LanguageSelector/Eng" to="." method="_on_engLang_focus_entered"]
 [connection signal="focus_exited" from="Section1/LanguageSelector/Eng" to="." method="_on_engLang_focus_exited"]
 [connection signal="pressed" from="Section1/LanguageSelector/Eng" to="." method="_on_engLang_pressed"]
@@ -1097,8 +1259,12 @@ vertical_alignment = 1
 [connection signal="pressed" from="Section2/Options/update" to="." method="_on_update_pressed"]
 [connection signal="focus_entered" from="Section2/Options/skip" to="." method="_on_skipupdates_focus_entered"]
 [connection signal="focus_exited" from="Section2/Options/skip" to="." method="_on_skipupdates_focus_exited"]
+[connection signal="pressed" from="Section2/Options/skip" to="." method="_on_skip_update_check_pressed"]
 [connection signal="focus_entered" from="Section3/Options/updatenow" to="." method="_on_updatenow_focus_entered"]
 [connection signal="focus_exited" from="Section3/Options/updatenow" to="." method="_on_updatenow_focus_exited"]
 [connection signal="pressed" from="Section3/Options/updatenow" to="." method="_on_updatenow_pressed"]
 [connection signal="focus_entered" from="Section3/Options/skip" to="." method="_on_skip_focus_entered"]
 [connection signal="focus_exited" from="Section3/Options/skip" to="." method="_on_skip_focus_exited"]
+[connection signal="pressed" from="Section3/Options/skip" to="." method="_on_skipupdates_pressed"]
+[connection signal="pressed" from="Section4/Options/Recover" to="." method="_on_recoveraccount_pressed"]
+[connection signal="pressed" from="Section4/Options/Create New" to="." method="_on_create_new_account_pressed"]

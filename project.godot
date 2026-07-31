@@ -18,11 +18,12 @@ config/name="XLaunch"
 config/version="0.1.0"
 config/tags=PackedStringArray("launcher", "mainproject", "open_source")
 run/main_scene="uid://t5junpe72ufv"
-config/features=PackedStringArray("4.6", "Mobile")
+config/quit_on_go_back=false
+config/features=PackedStringArray("4.7", "Mobile")
+config/icon="uid://chtop5r8ap5k4"
 boot_splash/show_image=false
 boot_splash/stretch_mode=0
 boot_splash/use_filter=false
-config/icon="uid://chtop5r8ap5k4"
 
 [autoload]
 
@@ -39,6 +40,7 @@ UpdateChecker="*uid://d4mr5gux7lmyq"
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/mode=3
+window/hdr/request_hdr_output=true
 window/stretch/mode="viewport"
 window/vsync/vsync_mode=2
 
@@ -70,6 +72,7 @@ Back={
 "deadzone": 0.2,
 "events": [Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":1,"pressure":0.0,"pressed":false,"script":null)
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194376,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 ]
 }
 TabLeft={
@@ -88,11 +91,18 @@ Menu={
 "deadzone": 0.2,
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194325,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":6,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":2,"position":Vector2(628, 11),"global_position":Vector2(642, 84),"factor":1.0,"button_index":2,"canceled":false,"pressed":true,"double_click":false,"script":null)
 ]
 }
+
+[input_devices]
+
+pointing/android/enable_long_press_as_right_click=true
 
 [rendering]
 
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="mobile"
+textures/vram_compression/import_s3tc_bptc=true
 textures/vram_compression/import_etc2_astc=true
+viewport/hdr_2d=true

@@ -1,7 +1,7 @@
 extends Control
 
 @onready var g_tag: Label = $ProfileBG/GTag
-
+@onready var g_score = $ProfileBG/CanvasLayer/GScore
 var Gamerpic = AccountManager.current_profile.face_texture
 var Gamertag = AccountManager.current_profile.gamertag
 var Gamerscore = AccountManager.current_profile.gamerscore
@@ -12,7 +12,8 @@ var MightLeave : bool = false
 func _ready() -> void:
 	g_tag.text = Gamertag
 	$ProfileBG/Gamerpic.texture = Gamerpic
-	$ProfileBG/CanvasLayer/GScore.text = str(Gamerscore)
+	g_score.text = str(Gamerscore)
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
